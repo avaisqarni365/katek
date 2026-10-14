@@ -48,8 +48,11 @@
   ];
 
   function link(item) {
-    const current = item.page === page ? ' aria-current="page"' : "";
-    return `<a href="${item.href}"${current}><span data-en>${item.en}</span><span data-ur>${item.ur}</span></a>`;
+    const attrs = [];
+    if (item.page === page) attrs.push('aria-current="page"');
+    if (item.href === "shop.html") attrs.push('class="menu-cta"');
+    const extra = attrs.length ? ` ${attrs.join(" ")}` : "";
+    return `<a href="${item.href}"${extra}><span data-en>${item.en}</span><span data-ur>${item.ur}</span></a>`;
   }
 
   function renderChrome() {
