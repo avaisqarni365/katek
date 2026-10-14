@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products · Katek</title>
+  <link rel="icon" href="assets/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>(function(){var l=localStorage.getItem("katek-lang")||"en";document.documentElement.lang=l==="ur"?"ur":"en";document.documentElement.dir=l==="ur"?"rtl":"ltr";})();</script>
+</head>
+<body data-page="products">
+  <a class="skip" href="#main">Skip to content</a>
+  <div data-header></div>
+  <main id="main" class="band">
+    <div class="wrap">
+      <p class="kicker"><span data-en>Catalog</span><span data-ur>فہرست</span></p>
+      <h1><span data-en>Products</span><span data-ur>مصنوعات</span></h1>
+      <p class="note"><span data-en>These descriptions are written for this Pakistan catalog. They are not product labels. Use the registered label for any rate.</span><span data-ur>یہ وضاحتیں اس پاکستانی فہرست کے لیے لکھی گئی ہیں۔ یہ لیبل نہیں۔ مقدار ہمیشہ رجسٹرڈ لیبل سے لیں۔</span></p>
+      <div class="filters">
+        <button type="button" data-filter="all" class="is-active"><span data-en>All</span><span data-ur>سب</span></button>
+        <button type="button" data-filter="pellets"><span data-en>Pellets</span><span data-ur>دانے</span></button>
+        <button type="button" data-filter="liquid"><span data-en>Liquids</span><span data-ur>مائع</span></button>
+        <button type="button" data-filter="minerals"><span data-en>Minerals</span><span data-ur>معدنیات</span></button>
+      </div>
+      <input class="search" data-search type="search" placeholder="Search">
+      <div class="grid" data-grid="audience" style="margin-top:1rem"></div>
+    </div>
+  </main>
+  <div data-footer></div>
+  <script src="js/site.js"></script>
+</body>
+</html>
