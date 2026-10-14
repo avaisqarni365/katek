@@ -1,4 +1,5 @@
 (function () {
+  const katekPhone = "";
   const page = document.body.dataset.page || "home";
   const titles = {
     home: { en: "Katek Organic Fertilizers", ur: "کیٹک نامیاتی کھادیں" },
@@ -57,7 +58,7 @@
     if (header) {
       header.innerHTML = `
         <div class="util"><div class="wrap util-row">
-          <span><span data-en>Liquid and pellet organic fertilizers · Pakistan</span><span data-ur>مائع اور دانے دار نامیاتی کھادیں · پاکستان</span></span>
+          <span data-phone-bar><span data-en>Liquid and pellet organic fertilizers · Pakistan</span><span data-ur>مائع اور دانے دار نامیاتی کھادیں · پاکستان</span></span>
           <div class="lang" role="group" aria-label="Language">
             <button type="button" data-set-lang="en">EN</button>
             <button type="button" data-set-lang="ur">اردو</button>
@@ -236,6 +237,7 @@
     document.documentElement.dir = value === "ur" ? "rtl" : "ltr";
     localStorage.setItem("katek-lang", value);
     if (titles[page]) document.title = titles[page][value];
+    renderPhone();
     render();
   }
 
@@ -247,21 +249,54 @@
       renderProducts();
     });
   });
+  function pakistaniPhone(value) {
+    let digits = String(value || "").replace(/\D/g, "");
+    if (digits.startsWith("0092")) digits = digits.slice(4);
+    else if (digits.startsWith("92")) digits = digits.slice(2);
+    if (digits.startsWith("3") && digits.length === 10) digits = `0${digits}`;
+    if (/^03\d{9}$/.test(digits)) return { local: `${digits.slice(0, 4)} ${digits.slice(4)}`, e164: `92${digits.slice(1)}` };
+    if (/^0[1-9]\d{8,9}$/.test(digits)) return { local: digits, e164: `92${digits.slice(1)}` };
+    return null;
+  }
+
+  function renderPhone() {
+    const bar = document.querySelector("[data-phone-bar]");
+    const spot = document.querySelector("[data-katek-phone]");
+    const parsed = pakistaniPhone(katekPhone);
+    if (bar && parsed) {
+      bar.innerHTML = `<a href="tel:+${parsed.e164}" style="color:inherit">${parsed.local}</a>`;
+    }
+    if (!spot) return;
+    if (!parsed) {
+      spot.innerHTML = lang() === "ur"
+        ? "کیٹک کا نمبر پاکستانی موبائل ہو گا، جیسے 03XX XXXXXXX۔ نمبر ملنے پر یہیں اور اوپر دکھے گا۔"
+        : "Katek’s number will be a Pakistani mobile, such as 03XX XXXXXXX. It will show here and in the top bar once you send it.";
+      return;
+    }
+    spot.innerHTML = `<a href="tel:+${parsed.e164}">${parsed.local}</a> · <a href="https://wa.me/${parsed.e164}">WhatsApp</a>`;
+  }
+
   document.querySelector("[data-quote-form]")?.addEventListener("submit", async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const note = document.querySelector("[data-form-note]");
     const name = String(data.get("name") || "").trim();
     const city = String(data.get("city") || "").trim();
-    const phone = String(data.get("phone") || "").trim();
+    const phone = pakistaniPhone(data.get("phone"));
     if (!name || !city || !phone) {
-      note.textContent = lang() === "ur" ? "نام، شہر اور فون لکھیں۔" : "Add your name, city, and phone.";
+      note.textContent = lang() === "ur" ? "پاکستانی نمبر لکھیں، موبائل 03XX XXXXXXX۔" : "Use a Pakistani number. Mobiles look like 03XX XXXXXXX.";
       return;
     }
-    const text = [`Katek quote`, `Name: ${name}`, `City: ${city}`, `Phone: ${phone}`, `Product: ${data.get("product") || "-"}`, `Message: ${data.get("message") || "-"}`].join("\n");
+    const text = [`Katek quote`, `Name: ${name}`, `City: ${city}`, `Phone: ${phone.local}`, `Product: ${data.get("product") || "-"}`, `Message: ${data.get("message") || "-"}`].join("\n");
+    const business = pakistaniPhone(katekPhone);
+    if (business) {
+      window.open(`https://wa.me/${business.e164}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+      note.textContent = lang() === "ur" ? "واٹس ایپ کھل گیا۔" : "WhatsApp is open with your enquiry.";
+      return;
+    }
     try {
       await navigator.clipboard.writeText(text);
-      note.textContent = lang() === "ur" ? "درخواست نقل ہو گئی۔ واٹس ایپ نمبر شامل ہونے پر اسے بھیج دیں۔" : "Inquiry copied. Send it once the WhatsApp number is added.";
+      note.textContent = lang() === "ur" ? "درخواست نقل ہو گئی۔ کیٹک کا پاکستانی واٹس ایپ نمبر شامل ہوتے ہی یہی پیغام بھیج دیں۔" : "Enquiry copied. Send it when Katek’s Pakistani WhatsApp number is added.";
     } catch (error) {
       note.textContent = text;
     }
