@@ -66,6 +66,9 @@ html[lang="ur"] .button span,
 html[lang="ur"] .menu a span,
 html[lang="ur"] .filters button span { font-family: var(--nastaliq); line-height: 1.8; }
 html[lang="ur"] .menu a { padding: 0.15rem 0.4rem; }
+html[lang="ur"] .tile strong,
+html[lang="ur"] .day strong,
+html[lang="ur"] .layer h3 { font-family: var(--nastaliq); line-height: 1.8; font-size: 1.35rem; }
 
 .wrap { width: min(1160px, calc(100% - 2rem)); margin-inline: auto; min-width: 0; }
 .skip { position: absolute; inset-inline-start: 1rem; top: -4rem; background: var(--ink); color: white; padding: 0.45rem 0.75rem; z-index: 80; }
@@ -355,5 +358,30 @@ html[lang="ur"] .cinema h1 { font-size: clamp(2rem, 8vw, 3.3rem); line-height: 1
   .menu > li.open > .sub { display: block; }
   .hero { padding-top: 1.2rem; }
   main.band h1 { font-size: clamp(2.2rem, 12vw, 3.4rem); }
+}
+.mosaic, .days, .stack { display: grid; border: 2px solid #17304f; }
+.mosaic, .days { grid-template-columns: repeat(4, 1fr); }
+.tile, .day { padding: 1rem 0.9rem 1.15rem; border-inline-end: 2px solid #17304f; min-width: 0; }
+.tile:last-child, .day:last-child { border-inline-end: 0; }
+.tile p, .day p, .layer p { margin: 0.25rem 0 0; }
+.tile.navy, .day.late { background: #08256f; color: #f3f6fb; }
+.tile.green { background: #178a32; color: white; }
+.tile.red { background: #ffe4e1; }
+.tile.leaf { background: #e7f6ea; }
+.tile strong, .day strong { display: block; font-family: var(--display); font-size: clamp(1.4rem, 2vw, 1.8rem); line-height: 1.1; }
+.layers { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(1rem, 3vw, 1.6rem); align-items: stretch; }
+.stack { align-content: stretch; }
+.layer { display: grid; grid-template-columns: 3rem 1fr; gap: 0.7rem; padding: 0.9rem 1rem; border-bottom: 2px solid #17304f; }
+.layer:last-child { border-bottom: 0; }
+.layer .n { font-family: var(--sans); font-weight: 700; }
+.layer.a { background: #f3e6c8; }
+.layer.b { background: #3d2a1a; color: #f6efe6; }
+.layer.c { background: #6b4a32; color: #f6efe6; }
+.layer.d { background: #e4d3b4; }
+.note-quiet { color: var(--muted); font-size: 0.95rem; }
+@media (max-width: 800px) {
+  .mosaic, .days, .layers { grid-template-columns: 1fr; }
+  .tile, .day { border-inline-end: 0; border-bottom: 2px solid #17304f; }
+  .tile:last-child, .day:last-child { border-bottom: 0; }
 }
 body { overflow-x: clip; }
