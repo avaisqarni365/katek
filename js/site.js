@@ -68,7 +68,7 @@
           </div>
         </div></div>
         <div class="site-header"><div class="wrap header-row">
-          <a class="brand" href="index.html"><img src="assets/logo.png" alt="Katek"></a>
+          <a class="brand" href="index.html"><img src="assets/logo.png" alt="Katek" width="132" height="54" decoding="async"></a>
           <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
           <ul class="menu">${nav.map((item) => `<li>${link(item)}${item.children ? `<ul class="sub">${item.children.map((child) => `<li>${link(child)}</li>`).join("")}</ul>` : ""}</li>`).join("")}</ul>
         </div></div>`;
@@ -234,11 +234,21 @@
     });
   }
 
+  function ensureUrduFont() {
+    if (document.getElementById("urdu-font")) return;
+    const link = document.createElement("link");
+    link.id = "urdu-font";
+    link.rel = "stylesheet";
+    link.href = "https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&display=swap";
+    document.head.appendChild(link);
+  }
+
   function setLang(next) {
     const value = next === "ur" ? "ur" : "en";
     document.documentElement.lang = value;
     document.documentElement.dir = value === "ur" ? "rtl" : "ltr";
     localStorage.setItem("katek-lang", value);
+    if (value === "ur") ensureUrduFont();
     if (titles[page]) document.title = titles[page][value];
     renderPhone();
     render();

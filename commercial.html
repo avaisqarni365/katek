@@ -4,9 +4,9 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Commercial Grower · Katek</title>
   <link rel="icon" href="assets/logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,560&family=Noto+Nastaliq+Urdu:wght@500;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <script>(function(){var l=localStorage.getItem("katek-lang")||"en";document.documentElement.lang=l==="ur"?"ur":"en";document.documentElement.dir=l==="ur"?"rtl":"ltr";})();</script>
+  <script>(function(){var l=localStorage.getItem("katek-lang")||"en";var ur=l==="ur";document.documentElement.lang=ur?"ur":"en";document.documentElement.dir=ur?"rtl":"ltr";if(ur){var s=document.createElement("link");s.id="urdu-font";s.rel="stylesheet";s.href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&display=swap";document.head.appendChild(s);}})();</script>
 </head>
 <body data-page="commercial">
   <a class="skip" href="#main">Skip to content</a>
@@ -16,7 +16,7 @@
       <p class="kicker"><span data-en>Commercial grower</span><span data-ur>تجارتی کاشتکار</span></p>
       <h1><span data-en>Soil health for a working farm</span><span data-ur>کام کرنے والے کھیت کے لیے زمین کی صحت</span></h1>
       <p class="prose"><span data-en>Pellets, liquids, compost, pasture blends, and a custom mix for your crop. Tell us the crop, the area, and the soil if you have a test.</span><span data-ur>دانے، مائع، کمپوسٹ، چراگاہ کی ملاوٹ، اور آپ کی فصل کے لیے خاص مرکب۔ فصل، رقبہ، اور اگر ہو تو مٹی کا ٹیسٹ بتائیں۔</span></p>
-      <img class="frame" src="assets/field-machinery.jpg" alt="Katek spreader in the field" style="margin:1.2rem 0">
+      <img class="frame" src="assets/field-machinery.jpg" alt="Katek spreader in the field" style="margin:1.2rem 0" loading="lazy" decoding="async">
       <div class="actions">
         <a class="button dark" href="products.html?audience=commercial"><span data-en>All products</span><span data-ur>تمام مصنوعات</span></a>
         <a class="button line" href="product.html?id=custom-blend"><span data-en>Custom blend</span><span data-ur>حسبِ ضرورت ملاوٹ</span></a>

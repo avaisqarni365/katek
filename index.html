@@ -8,16 +8,17 @@
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,560&family=Noto+Nastaliq+Urdu:wght@500;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/field-waves.jpg" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <script>(function(){var l=localStorage.getItem("katek-lang")||"en";document.documentElement.lang=l==="ur"?"ur":"en";document.documentElement.dir=l==="ur"?"rtl":"ltr";})();</script>
+  <script>(function(){var l=localStorage.getItem("katek-lang")||"en";var ur=l==="ur";document.documentElement.lang=ur?"ur":"en";document.documentElement.dir=ur?"rtl":"ltr";if(ur){var s=document.createElement("link");s.id="urdu-font";s.rel="stylesheet";s.href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&display=swap";document.head.appendChild(s);}})();</script>
 </head>
 <body data-page="home">
   <a class="skip" href="#main">Skip to content</a>
   <div data-header></div>
   <main id="main">
     <section class="cinema">
-      <img class="cinema-photo" src="assets/field-waves.jpg" alt="">
+      <img class="cinema-photo" src="assets/field-waves.jpg" alt="" fetchpriority="high" decoding="async">
       <div class="cinema-shade"></div>
       <div class="wrap cinema-copy">
         <p class="kicker"><span data-en>Pakistan</span><span data-ur>پاکستان</span></p>
@@ -56,7 +57,7 @@
     </section>
     <section class="band">
       <div class="wrap story">
-        <img src="assets/farmers-uniform.jpg" alt="">
+        <img src="assets/farmers-uniform.jpg" alt="" loading="lazy" decoding="async">
         <div>
           <p class="kicker"><span data-en>In the field</span><span data-ur>کھیت میں</span></p>
           <h2><span data-en>A uniform the crop can recognise</span><span data-ur>ایسا لباس جسے کھیت پہچان لے</span></h2>
@@ -71,12 +72,12 @@
           <h2><span data-en>The same colours on the spreader</span><span data-ur>وہی رنگ اسپریڈر پر</span></h2>
           <p><span data-en>Tractors and spreaders working the crop carry Katek blue, green rims, and a red stripe, moving through the natural waves of the field.</span><span data-ur>فصل میں کام کرنے والے ٹریکٹر اور اسپریڈر کیٹک کا نیلا، سبز رم اور سرخ پٹی لیے کھیت کی قدرتی لہروں میں چلتے ہیں۔</span></p>
         </div>
-        <img src="assets/field-machinery.jpg" alt="">
+        <img src="assets/field-machinery.jpg" alt="" loading="lazy" decoding="async">
       </div>
     </section>
     <section class="band">
       <div class="wrap shelf">
-        <img src="assets/brand-products.jpg" alt="">
+        <img src="assets/brand-products.jpg" alt="" loading="lazy" decoding="async">
         <div>
           <p class="kicker"><span data-en>The bag and the bottle</span><span data-ur>بوری اور بوتل</span></p>
           <h2><span data-en>Products that wear the brand</span><span data-ur>مصنوعات جو نشان پہنتی ہیں</span></h2>
