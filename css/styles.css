@@ -306,6 +306,10 @@ html[lang="ur"] .product .tag {
 .product .text-link::after { content: " \2192"; }
 html[dir="rtl"] .product .text-link::after { content: " \2190"; }
 .product:hover { background: #f7f5f0; }
+.papers { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+.papers figure { margin: 0; background: #f7f4ee; border: 1px solid var(--line); border-radius: 28px; overflow: hidden; box-shadow: var(--shadow); }
+.papers img { width: 100%; height: min(68vh, 640px); object-fit: contain; background: #f7f4ee; }
+.papers figcaption { padding: 0.75rem 1rem 0.95rem; color: var(--muted); font-size: 0.92rem; background: white; }
 .section-head { display: flex; justify-content: space-between; gap: 1rem; align-items: end; margin-bottom: 1.1rem; }
 .section-head a { font-weight: 750; }
 .filters { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 1rem 0; }
@@ -548,7 +552,8 @@ html[dir="rtl"] .plate::before {
 .note-quiet { color: var(--muted); font-size: 0.95rem; margin: 0.75rem 0.35rem 0.15rem; }
 
 @media (max-width: 800px) {
-  .story, .story.reverse, .shelf, .color-row, .thirds, .observe, .scene, .scene.flip, .days { grid-template-columns: 1fr; }
+  .story, .story.reverse, .shelf, .color-row, .thirds, .observe, .scene, .scene.flip, .days, .papers { grid-template-columns: 1fr; }
+  .papers img { height: auto; max-height: 78vh; }
   .tone, .third { border-inline-end: 0; border-bottom: 1px solid rgba(20, 32, 51, 0.08); }
   .tone:last-child, .third:last-child { border-bottom: 0; }
   .observe img, .scene img { min-height: 220px; max-height: 280px; }
