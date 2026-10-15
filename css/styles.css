@@ -68,6 +68,24 @@ html[lang="ur"] .tone strong,
 html[lang="ur"] .day strong,
 html[lang="ur"] .layer h3,
 html[lang="ur"] .third h3 { font-family: var(--nastaliq); line-height: 1.8; font-size: 1.35rem; }
+html[dir="rtl"] a[href^="tel:"],
+html[dir="rtl"] a[href^="mailto:"],
+html[dir="rtl"] .vcard h3 {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+  font-family: var(--sans);
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+html[dir="rtl"] .vcard p:has(a[href^="tel:"]),
+html[dir="rtl"] .vcard p:has(a[href^="mailto:"]),
+html[dir="rtl"] .bio p:has(a[href^="tel:"]),
+html[dir="rtl"] .bio p:has(a[href^="mailto:"]) {
+  direction: ltr;
+  text-align: center;
+}
+html[dir="rtl"] .desk li { direction: ltr; }
 
 .wrap { width: min(1160px, calc(100% - 2rem)); margin-inline: auto; min-width: 0; }
 .skip { position: absolute; inset-inline-start: 1rem; top: -4rem; background: var(--ink); color: white; padding: 0.45rem 0.75rem; z-index: 80; }
