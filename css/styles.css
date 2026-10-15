@@ -714,4 +714,30 @@ html[dir="rtl"] .slide-card { margin: 0 max(1.25rem, calc((100% - 1160px) / 2)) 
 .person h3 { margin-bottom: 0.1rem; }
 .person .role { margin: 0 0 0.55rem; color: var(--green); font-weight: 700; }
 .person p { margin: 0.15rem 0; }
+.stickers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; margin-top: 1.6rem; }
+.sticker { margin: 0; background: #1f9a38; color: white; text-align: center; padding: 1rem 0.7rem 0.95rem; }
+.sticker img { width: min(78%, 190px); aspect-ratio: 1; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto; }
+.sticker figcaption { margin-top: 0.75rem; font-weight: 700; font-size: 1.15rem; line-height: 1.25; }
+.team-banner { position: relative; }
+.team-banner > img { width: 100%; height: 340px; object-fit: cover; display: block; }
+.team-plate { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: white; border: 6px solid #1f9a38; padding: 0.85rem 2.4rem; max-width: calc(100% - 2rem); }
+.team-plate h1 { margin: 0; color: #0d4ec4; font-size: clamp(1.7rem, 4vw, 2.4rem); white-space: nowrap; }
+.team-intro { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.4rem; align-items: center; }
+.team-intro img { width: 100%; height: 280px; object-fit: cover; }
+.roster { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin-top: 1.6rem; }
+.member { background: white; border: 1px solid #e4eaf3; }
+.member > img, .member .face { width: 100%; height: 210px; object-fit: contain; background: #f4f7fb; border-top: 4px solid #e6b325; display: block; }
+.member .face { display: grid; place-items: center; background: #082f86; }
+.member .face img { width: 70%; height: auto; object-fit: contain; }
+.member .who { background: #1f9a38; color: white; text-align: center; padding: 0.7rem 0.6rem 0.75rem; }
+.member .who h3 { margin: 0; color: white; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.05rem; }
+.member .who p { margin: 0.15rem 0 0; color: white; }
+.member .bio { padding: 0.85rem 0.9rem 1rem; }
+.member .bio p { margin: 0.25rem 0; color: #555; }
+@media (max-width: 800px) {
+  .stickers, .team-intro, .roster { grid-template-columns: 1fr 1fr; }
+  .roster { grid-template-columns: 1fr; }
+  .team-plate h1 { white-space: normal; text-align: center; }
+  .team-banner > img { height: 220px; }
+}
 body { overflow-x: clip; }
