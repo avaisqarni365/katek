@@ -107,7 +107,8 @@
 
   function productCard(product) {
     const card = document.createElement("article");
-    card.className = "card";
+    card.className = "product";
+    card.dataset.form = (product.form.en || "").toLowerCase();
     card.innerHTML = `<p class="meta"><span class="tag"></span></p><h3></h3><p class="summary"></p><a class="text-link" href="product.html?id=${product.id}"></a>`;
     card.querySelector(".tag").textContent = tx(product.form);
     card.querySelector("h3").textContent = tx(product.name);
