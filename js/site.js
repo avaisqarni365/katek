@@ -109,15 +109,15 @@
 
   let catalog = null;
 
-  function productCard(product) {
+  function productCard(product, branded) {
     const card = document.createElement("article");
     card.className = "product";
     card.dataset.form = (product.form.en || "").toLowerCase();
-    card.innerHTML = `<p class="meta"><span class="tag"></span></p><h3></h3><p class="summary"></p><a class="text-link" href="product.html?id=${product.id}"></a>`;
+    card.innerHTML = `${branded ? `<a class="pack" href="product.html?id=${product.id}"><img src="assets/brand-mark.jpg" alt="Katek"></a>` : ""}<p class="meta"><span class="tag"></span></p><h3></h3><p class="summary"></p><a class="text-link" href="product.html?id=${product.id}"></a>`;
     card.querySelector(".tag").textContent = tx(product.form);
     card.querySelector("h3").textContent = tx(product.name);
     card.querySelector(".summary").textContent = tx(product.summary);
-    card.querySelector("a").textContent = lang() === "ur" ? "مصنوع دیکھیں" : "View product";
+    card.querySelector("a.text-link").textContent = lang() === "ur" ? "مصنوع دیکھیں" : "View product";
     return card;
   }
 
@@ -153,7 +153,7 @@
         grid.appendChild(empty);
         return;
       }
-      items.forEach((product) => grid.appendChild(productCard(product)));
+      items.forEach((product) => grid.appendChild(productCard(product, mode === "featured")));
     });
   }
 

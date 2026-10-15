@@ -635,7 +635,9 @@ html[dir="rtl"] .slide-card { margin: 0 max(1.25rem, calc((100% - 1160px) / 2)) 
 .au-news { background: #fff; }
 .shelf-row { grid-template-columns: repeat(4, 1fr); gap: 0.85rem; background: transparent; border: 0; box-shadow: none; border-radius: 0; overflow: visible; }
 .shelf-row::before { display: none; }
-.shelf-row .product { border: 1px solid #e4eaf3; border-top: 4px solid #0d4ec4; border-inline-start-width: 1px; text-align: start; background: white; box-shadow: 0 10px 24px rgba(8, 47, 134, 0.06); }
+.shelf-row .product { border: 1px solid #e4eaf3; border-top: 4px solid #0d4ec4; border-inline-start-width: 1px; text-align: start; background: white; box-shadow: 0 10px 24px rgba(8, 47, 134, 0.06); overflow: hidden; }
+.shelf-row .pack { display: block; margin: -1.35rem -1.2rem 0.8rem; background: #0b3f9e; line-height: 0; }
+.shelf-row .pack img { width: 100%; height: 176px; object-fit: cover; object-position: center 58%; display: block; }
 .shelf-row .product[data-form="liquid"] { border-top-color: #1f9a38; }
 .shelf-row .product[data-form="minerals"],
 .shelf-row .product[data-form="mix"],
