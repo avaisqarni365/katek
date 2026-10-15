@@ -109,11 +109,20 @@
 
   let catalog = null;
 
+  function esc(value) {
+    return String(value).replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+  }
+
   function productCard(product, branded) {
     const card = document.createElement("article");
     card.className = "product";
-    card.dataset.form = (product.form.en || "").toLowerCase();
-    card.innerHTML = `${branded ? `<a class="pack" href="product.html?id=${product.id}"><img src="assets/brand-mark.jpg" alt="Katek"></a>` : ""}<p class="meta"><span class="tag"></span></p><h3></h3><p class="summary"></p><a class="text-link" href="product.html?id=${product.id}"></a>`;
+    const form = (product.form.en || "").toLowerCase();
+    card.dataset.form = form;
+    const vessel = form === "liquid" || form === "starter" ? "bottle" : "bag";
+    const pack = branded
+      ? `<a class="pack ${vessel}" href="product.html?id=${product.id}"><span class="pouch"><span class="label"><img src="assets/logo.png" alt="Katek"><strong><span data-en>${esc(product.name.en)}</span><span data-ur>${esc(product.name.ur)}</span></strong><i></i></span></span></a>`
+      : "";
+    card.innerHTML = `${pack}<p class="meta"><span class="tag"></span></p><h3></h3><p class="summary"></p><a class="text-link" href="product.html?id=${product.id}"></a>`;
     card.querySelector(".tag").textContent = tx(product.form);
     card.querySelector("h3").textContent = tx(product.name);
     card.querySelector(".summary").textContent = tx(product.summary);
