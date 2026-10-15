@@ -306,6 +306,11 @@ html[dir="rtl"] .product .text-link::after { content: " \2190"; }
 .product:hover { background: #f7f5f0; }
 .doc-links { display: flex; flex-wrap: wrap; gap: 0.8rem 1.4rem; margin: 1rem 0 0; }
 .doc-links a { font-weight: 600; }
+.city { display: grid; grid-template-columns: 1.45fr 0.8fr 0.8fr; gap: 0.75rem; margin-top: 1.15rem; }
+.city figure { margin: 0; background: white; border: 1px solid var(--line); overflow: hidden; }
+.city img, .city iframe { width: 100%; height: 250px; border: 0; display: block; object-fit: cover; }
+.city figcaption { padding: 0.55rem 0.75rem 0.7rem; color: var(--muted); font-size: 0.92rem; }
+.city figcaption a { font-weight: 600; }
 .section-head { display: flex; justify-content: space-between; gap: 1rem; align-items: end; margin-bottom: 1.1rem; }
 .section-head a { font-weight: 750; }
 .filters { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 1rem 0; }
@@ -548,7 +553,7 @@ html[dir="rtl"] .plate::before {
 .note-quiet { color: var(--muted); font-size: 0.95rem; margin: 0.75rem 0.35rem 0.15rem; }
 
 @media (max-width: 800px) {
-  .story, .story.reverse, .shelf, .color-row, .thirds, .observe, .scene, .scene.flip, .days { grid-template-columns: 1fr; }
+  .story, .story.reverse, .shelf, .color-row, .thirds, .observe, .scene, .scene.flip, .days, .city { grid-template-columns: 1fr; }
   .tone, .third { border-inline-end: 0; border-bottom: 1px solid rgba(20, 32, 51, 0.08); }
   .tone:last-child, .third:last-child { border-bottom: 0; }
   .observe img, .scene img { min-height: 220px; max-height: 280px; }
