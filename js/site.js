@@ -122,11 +122,15 @@
     const pack = branded
       ? `<a class="pack ${vessel}" href="product.html?id=${product.id}"><span class="pouch"><span class="label"><img src="assets/logo.png" alt="Katek"><strong><span data-en>${esc(product.name.en)}</span><span data-ur>${esc(product.name.ur)}</span></strong><i></i></span></span></a>`
       : "";
-    card.innerHTML = `${pack}<p class="meta"><span class="tag"></span></p><h3></h3><p class="summary"></p><a class="text-link" href="product.html?id=${product.id}"></a>`;
+    card.innerHTML = `${pack}<p class="meta"><span class="tag"></span></p><h3></h3><p class="summary"></p><div class="claim"><p class="formula"><b></b><span></span></p><p class="result"><b></b><span></span></p></div><a class="text-link" href="product.html?id=${product.id}"></a>`;
     card.querySelector(".tag").textContent = tx(product.form);
     card.querySelector("h3").textContent = tx(product.name);
     card.querySelector(".summary").textContent = tx(product.summary);
-    card.querySelector("a.text-link").textContent = lang() === "ur" ? "مصنوع دیکھیں" : "View product";
+    card.querySelector(".formula b").textContent = lang() === "ur" ? "فارمولا" : "Formula";
+    card.querySelector(".formula span").textContent = tx(product.formula);
+    card.querySelector(".result b").textContent = lang() === "ur" ? "نتیجہ" : "Result";
+    card.querySelector(".result span").textContent = tx(product.result);
+    card.querySelector("a.text-link").textContent = lang() === "ur" ? "پہلے اور بعد" : "Before and after";
     return card;
   }
 
@@ -175,10 +179,21 @@
       return;
     }
     document.title = `${tx(product.name)} · Katek`;
-    root.innerHTML = `<p class="kicker"></p><h1></h1><p class="lead"></p><p><a class="button dark"></a></p>`;
+    root.innerHTML = `<p class="kicker"></p><h1></h1><p class="lead"></p><div class="claim"><p class="formula"><b></b><span></span></p><p class="result"><b></b><span></span></p></div><div class="ba"><article class="before"><h2></h2><p></p></article><article class="after"><h2></h2><p></p></article></div><p class="note-quiet"></p><p><a class="button dark"></a></p>`;
     root.querySelector(".kicker").textContent = tx(product.form);
     root.querySelector("h1").textContent = tx(product.name);
     root.querySelector(".lead").textContent = tx(product.summary);
+    root.querySelector(".formula b").textContent = lang() === "ur" ? "فارمولا" : "Formula";
+    root.querySelector(".formula span").textContent = tx(product.formula);
+    root.querySelector(".result b").textContent = lang() === "ur" ? "نتیجہ" : "Result";
+    root.querySelector(".result span").textContent = tx(product.result);
+    root.querySelector(".before h2").textContent = lang() === "ur" ? "پہلے" : "Before";
+    root.querySelector(".before p").textContent = tx(product.before);
+    root.querySelector(".after h2").textContent = lang() === "ur" ? "بعد" : "After";
+    root.querySelector(".after p").textContent = tx(product.after);
+    root.querySelector(".note-quiet").textContent = lang() === "ur"
+      ? "یہ فہرست کی وضاحت ہے، رجسٹرڈ لیبل نہیں۔ مقدار لیبل سے لیں۔ نتیجہ پانی اور مٹی پر رہتا ہے۔"
+      : "This is the catalog description, not the registered label. Take any rate from that label. The result depends on water and the soil.";
     const quote = root.querySelector("a");
     quote.href = `contact.html?product=${product.id}`;
     quote.textContent = lang() === "ur" ? "قیمت کی درخواست" : "Request a quote";
@@ -349,7 +364,7 @@
   renderChrome();
   const queryLang = new URLSearchParams(location.search).get("lang");
   setLang(queryLang === "ur" || queryLang === "en" ? queryLang : (localStorage.getItem("katek-lang") || "en"));
-  fetch("data/catalog.json").then((response) => response.json()).then((data) => {
+  fetch("data/catalog.json?v=30").then((response) => response.json()).then((data) => {
     catalog = data;
     render();
   }).catch(() => {

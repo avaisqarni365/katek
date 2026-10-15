@@ -1,49 +1,1233 @@
 {
   "products": [
-    {"id":"super-growth","name":{"en":"Super Growth","ur":"سپر گروتھ"},"form":{"en":"Pellets","ur":"دانے"},"audiences":["home","commercial"],"featured":true,"summary":{"en":"A slow-release pellet fertiliser for vegetables, fruit trees, and garden beds. It feeds the plant and adds organic matter to the soil.","ur":"سبزیوں، پھلدار درختوں اور کیاریوں کے لیے آہستہ گھلنے والی دانے دار کھاد۔ یہ پودے کو خوراک دیتی ہے اور مٹی میں نامیاتی مادہ جوڑتی ہے۔"}},
-    {"id":"super-booster","name":{"en":"Super Booster","ur":"سپر بوسٹر"},"form":{"en":"Pellets","ur":"دانے"},"audiences":["home","commercial"],"featured":true,"summary":{"en":"A stronger pellet feed for tired beds, new plantings, and crops that need a lift at the start of the season.","ur":"تھکی ہوئی کیاریوں، نئی بوائی اور موسم کے آغاز پر اضافی خوراک کے لیے مضبوط دانے دار کھاد۔"}},
-    {"id":"neptune","name":{"en":"Neptune Liquid Seaweed","ur":"نیپچون مائع سی ویڈ"},"form":{"en":"Liquid","ur":"مائع"},"audiences":["home","commercial"],"featured":true,"summary":{"en":"A seaweed concentrate for leaf colour and steady growth between solid feeds. Dilute it as the label says.","ur":"پتوں کے رنگ اور ٹھوس کھاد کے درمیان مسلسل نشوونما کے لیے سی ویڈ کا گاڑھا عرق۔ لیبل کے مطابق پتلا کریں۔"}},
-    {"id":"super-grass","name":{"en":"Super Grass","ur":"سپر گراس"},"form":{"en":"Pellets","ur":"دانے"},"audiences":["home","commercial"],"featured":true,"summary":{"en":"A lawn pellet for home gardens and landscape turf. Use it when the grass is growing, then water it in.","ur":"گھریلو باغ اور لان کے لیے دانے دار کھاد۔ گھاس کے بڑھتے موسم میں ڈالیں، پھر پانی دے دیں۔"}},
-    {"id":"citrus-fruit","name":{"en":"Citrus & Fruit","ur":"کھٹے پھل اور پھل"},"form":{"en":"Pellets","ur":"دانے"},"audiences":["home","commercial"],"featured":true,"summary":{"en":"A pellet feed for kinnow, lemon, mango, guava, and other fruit trees. Apply around the drip line, not against the trunk.","ur":"کینو، لیموں، آم، امرود اور دوسرے پھلدار درختوں کے لیے دانے دار خوراک۔ تنے سے ہٹا کر پتوں کے کنارے پر ڈالیں۔"}},
-    {"id":"rose-flower","name":{"en":"Rose & Flower","ur":"گلاب اور پھول"},"form":{"en":"Pellets","ur":"دانے"},"audiences":["home"],"featured":true,"summary":{"en":"A flower-bed fertiliser for roses, annuals, and pots that are grown for bloom.","ur":"گلاب، موسمی پھولوں اور گملوں کے لیے پھول والی کیاری کی کھاد۔"}},
-    {"id":"potting-mix","name":{"en":"Potting Mix","ur":"پوٹنگ مکس"},"form":{"en":"Mix","ur":"مرکب"},"audiences":["home"],"featured":true,"summary":{"en":"A bagged mix for pots and seed trays. It holds water without turning into mud.","ur":"گملوں اور بیج کی ٹرے کے لیے تھیلی بند مرکب۔ پانی تھامتا ہے مگر کیچڑ نہیں بنتا۔"}},
-    {"id":"not-just-mulch","name":{"en":"Not Just Mulch","ur":"صرف ملچ نہیں"},"form":{"en":"Mulch","ur":"ملچ"},"audiences":["home"],"featured":true,"summary":{"en":"A surface mulch that also feeds the bed. Keep it off stems and tree trunks.","ur":"سطح کا ایسا ملچ جو کیاری کو خوراک بھی دیتا ہے۔ تنوں اور درخت کے تنے سے ہٹا کر رکھیں۔"}},
-    {"id":"super-rock","name":{"en":"Super Rock","ur":"سپر راک"},"form":{"en":"Minerals","ur":"معدنیات"},"audiences":["home","commercial"],"featured":true,"summary":{"en":"A rock-mineral product for soils that need a broader mineral supply, not only nitrogen.","ur":"ایسی زمین کے لیے معدنی مرکب جسے صرف نائٹروجن نہیں، وسیع معدنی خوراک چاہیے۔"}},
-    {"id":"super-cal","name":{"en":"Super Cal","ur":"سپر کیل"},"form":{"en":"Liquid","ur":"مائع"},"audiences":["home","commercial"],"featured":true,"summary":{"en":"A liquid calcium product for tight soil that is hard to wet. It is a soil treatment, not a quick leaf spray for every crop.","ur":"سخت مٹی کے لیے مائع کیلشیم، جہاں پانی مشکل سے اترتا ہے۔ یہ زمین کا علاج ہے، ہر فصل کا فوری پتوں والا سپرے نہیں۔"}},
-    {"id":"blood-bone-plus","name":{"en":"Blood & Bone Plus","ur":"بلڈ اینڈ بون پلس"},"form":{"en":"Pellets","ur":"دانے"},"audiences":["home","commercial"],"featured":true,"summary":{"en":"A classic blood-and-bone style pellet with extra minerals for beds, shrubs, and planting holes.","ur":"کیاریوں، جھاڑیوں اور پودے لگانے کے گڑھے کے لیے اضافی معدنیات کے ساتھ بلڈ اینڈ بون طرز کے دانے۔"}},
-    {"id":"super-feed","name":{"en":"Super Feed","ur":"سپر فیڈ"},"form":{"en":"Liquid","ur":"مائع"},"audiences":["home","commercial"],"featured":true,"summary":{"en":"An all-purpose liquid fertiliser for pots, vegetables, and a quick feed during active growth.","ur":"گملوں، سبزیوں اور تیز نشوونما کے دوران فوری خوراک کے لیے ہمہ گیر مائع کھاد۔"}},
-    {"id":"lawn-booster","name":{"en":"Lawn & Garden Booster","ur":"لان اور باغ بوسٹر"},"form":{"en":"Liquid","ur":"مائع"},"audiences":["home"],"featured":false,"summary":{"en":"A liquid boost for lawns and mixed garden beds between pellet applications.","ur":"دانے دار کھاد کے درمیان لان اور ملی جلی کیاریوں کے لیے مائع اضافہ۔"}},
-    {"id":"blood-bone-fines","name":{"en":"Blood & Bone Traditional Fines","ur":"بلڈ اینڈ بون باریک"},"form":{"en":"Fines","ur":"باریک"},"audiences":["home","commercial"],"featured":false,"summary":{"en":"A finer blood-and-bone for pots, seed beds, and places where coarse pellets are awkward.","ur":"گملوں، بیج کی کیاری اور ان جگہوں کے لیے باریک بلڈ اینڈ بون جہاں موٹے دانے اچھے نہیں۔"}},
-    {"id":"liquid-potash","name":{"en":"Liquid Potash","ur":"مائع پوٹاش"},"form":{"en":"Liquid","ur":"مائع"},"audiences":["home","commercial"],"featured":false,"summary":{"en":"A potassium liquid for flowering, fruit fill, and plants that have enough nitrogen already.","ur":"پھول، پھل بھرنے اور ان پودوں کے لیے پوٹاشیم مائع جنہیں نائٹروجن پہلے ہی مل چکی ہو۔"}},
-    {"id":"nurture","name":{"en":"Nurture","ur":"نرچر"},"form":{"en":"Liquid","ur":"مائع"},"audiences":["home","commercial"],"featured":false,"summary":{"en":"A gentle all-purpose liquid for seedlings, pots, and regular feeding through the growing months.","ur":"پنیری، گملوں اور بڑھتے مہینوں کی باقاعدہ خوراک کے لیے نرم ہمہ گیر مائع۔"}},
-    {"id":"aussie-natives","name":{"en":"Aussie Natives","ur":"سخت مقامی پودے"},"form":{"en":"Pellets","ur":"دانے"},"audiences":["home"],"featured":false,"summary":{"en":"A milder pellet for hardy and native-style shrubs that dislike a heavy feed. In Pakistan it suits tough ornamentals and low-water shrubs.","ur":"سخت اور مقامی طرز کی جھاڑیوں کے لیے ہلکے دانے، جنہیں بھاری خوراک راس نہیں آتی۔ پاکستان میں کم پانی والی سختی جھاڑیوں کے لیے موزوں ہے۔"}},
-    {"id":"guano","name":{"en":"Katek Guano","ur":"کیٹک گوانو"},"form":{"en":"Granules","ur":"دانے"},"audiences":["home","commercial"],"featured":false,"summary":{"en":"A guano granule used where flowers and fruit need phosphorus support in the soil.","ur":"گوانو کے دانے، جہاں پھول اور پھل کو مٹی میں فاسفورس کی مدد چاہیے۔"}},
-    {"id":"genesis","name":{"en":"Genesis Tree Start","ur":"جینیسس ٹری سٹارٹ"},"form":{"en":"Pellets","ur":"دانے"},"audiences":["home","commercial"],"featured":false,"summary":{"en":"A planting fertiliser for new trees. Mix it into the backfill soil, not in a pile against the roots.","ur":"نئے درخت لگانے کی کھاد۔ اسے واپس بھری جانے والی مٹی میں ملائيں، جڑوں پر ڈھیر نہ لگائیں۔"}},
-    {"id":"custom-blend","name":{"en":"Custom Blend","ur":"حسبِ ضرورت ملاوٹ"},"form":{"en":"Blend","ur":"ملاوٹ"},"audiences":["commercial"],"featured":false,"summary":{"en":"A fertiliser blend made for one soil and one crop. Send the crop, area, and a soil test if you have one.","ur":"ایک زمین اور ایک فصل کے لیے بنائی گئی ملاوٹ۔ فصل، رقبہ اور اگر ہو تو مٹی کا ٹیسٹ بھیجیں۔"}},
-    {"id":"haymaker","name":{"en":"HayMaker","ur":"ہے میکر"},"form":{"en":"Pellets","ur":"دانے"},"audiences":["commercial"],"featured":false,"summary":{"en":"A pasture fertiliser for growers who cut hay and need the stand to recover after a cut.","ur":"چراگاہ کی کھاد، ان کاشتکاروں کے لیے جو گھاس کاٹتے ہیں اور کٹائی کے بعد کھیت کو سنبھالنا ہوتا ہے۔"}},
-    {"id":"lucerne-prime","name":{"en":"Lucerne Prime","ur":"لوسرن پرائم"},"form":{"en":"Pellets","ur":"دانے"},"audiences":["commercial"],"featured":false,"summary":{"en":"A blend aimed at lucerne stands. Lucerne fixes nitrogen, so the feed is built around the other nutrients the crop still needs.","ur":"لوسرن کے کھیت کے لیے ملاوٹ۔ لوسرن نائٹروجن خود جوڑتا ہے، اس لیے خوراک باقی غذائی اجزا کے گرد بنائی جاتی ہے۔"}},
-    {"id":"organic-gold","name":{"en":"Poultry Manure Compost","ur":"پولٹری کھاد کمپوسٹ"},"form":{"en":"Compost","ur":"کمپوسٹ"},"audiences":["commercial"],"featured":false,"summary":{"en":"Composted poultry manure for commercial beds and orchards. Use composted material, not raw manure against young plants.","ur":"تجارتی کیاریوں اور باغات کے لیے کمپوسٹ شدہ مرغی کی کھاد۔ کچی کھاد نوجوان پودوں سے لگ کر نہ ڈالیں۔"}},
-    {"id":"revive","name":{"en":"Revive","ur":"ریوائیو"},"form":{"en":"Pellets","ur":"دانے"},"audiences":["commercial"],"featured":false,"summary":{"en":"A pasture pellet for tired grazing country that needs organic matter as well as nutrients.","ur":"تھکی ہوئی چراگاہ کے لیے دانے، جہاں غذائی اجزا کے ساتھ نامیاتی مادہ بھی چاہیے۔"}},
-    {"id":"super-kelp","name":{"en":"Super Kelp","ur":"سپر کیلپ"},"form":{"en":"Liquid","ur":"مائع"},"audiences":["commercial"],"featured":false,"summary":{"en":"A kelp liquid for commercial programs that already use solid fertiliser and want a biological foliar between passes.","ur":"تجارتی پروگرام کے لیے کیلپ مائع، جہاں ٹھوس کھاد پہلے سے ہو اور درمیان میں حیاتیاتی فولیار چاہیے۔"}},
-    {"id":"superstart","name":{"en":"SuperStart Trio","ur":"سپر سٹارٹ ٹریو"},"form":{"en":"Starter","ur":"آغاز"},"audiences":["commercial"],"featured":false,"summary":{"en":"A starter for sowing and transplanting. It sits with the young root, then the main fertiliser program takes over.","ur":"بوائی اور پودا لگانے کا آغاز۔ یہ نوجوان جڑ کے ساتھ رہتا ہے، پھر اصل کھاد کا پروگرام سنبھال لیتا ہے۔"}},
-    {"id":"superstar-zn","name":{"en":"SuperStar Zn","ur":"سپر سٹار زنک"},"form":{"en":"Trace","ur":"خرد جز"},"audiences":["commercial"],"featured":false,"summary":{"en":"A zinc product for crops that show zinc hunger, including rice and wheat on many Pakistani soils. Follow the label rate.","ur":"زنک کی کمی والی فصلوں کے لیے، جن میں پاکستان کی بہت سی زمینوں پر چاول اور گندم شامل ہیں۔ مقدار لیبل سے لیں۔"}},
-    {"id":"super-phoska","name":{"en":"Super Phoska + TE","ur":"سپر فوسکا"},"form":{"en":"Blend","ur":"ملاوٹ"},"audiences":["commercial"],"featured":false,"summary":{"en":"A phosphorus blend with trace elements for soils that need more than a straight nitrogen fertiliser.","ur":"خرد اجزا کے ساتھ فاسفورس ملاوٹ، ان زمینوں کے لیے جنہیں صرف نائٹروجن کھاد کافی نہیں۔"}}
+    {
+      "id": "super-growth",
+      "name": {
+        "en": "Super Growth",
+        "ur": "سپر گروتھ"
+      },
+      "form": {
+        "en": "Pellets",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "A slow-release pellet fertiliser for vegetables, fruit trees, and garden beds. It feeds the plant and adds organic matter to the soil.",
+        "ur": "سبزیوں، پھلدار درختوں اور کیاریوں کے لیے آہستہ گھلنے والی دانے دار کھاد۔ یہ پودے کو خوراک دیتی ہے اور مٹی میں نامیاتی مادہ جوڑتی ہے۔"
+      },
+      "formula": {
+        "en": "Slow-release pellets with organic matter.",
+        "ur": "آہستہ گھلنے والے دانے، نامیاتی مادے کے ساتھ۔"
+      },
+      "result": {
+        "en": "The plant is fed, and the bed gains organic matter.",
+        "ur": "پودے کو خوراک ملتی ہے اور کیاری میں نامیاتی مادہ بڑھتا ہے۔"
+      },
+      "before": {
+        "en": "A vegetable bed, fruit tree, or garden bed with little organic matter in the soil.",
+        "ur": "سبزی کی کیاری، پھلدار درخت، یا باغیچے کی کیاری، جس کی مٹی میں نامیاتی مادہ کم ہو۔"
+      },
+      "after": {
+        "en": "The same bed on a slow feed, with organic matter going back into the soil. Water still decides how the plant uses it.",
+        "ur": "وہی کیاری آہستہ خوراک پر، اور نامیاتی مادہ مٹی میں واپس۔ پودا اسے کتنا استعمال کرے، یہ پانی پر رہتا ہے۔"
+      }
+    },
+    {
+      "id": "super-booster",
+      "name": {
+        "en": "Super Booster",
+        "ur": "سپر بوسٹر"
+      },
+      "form": {
+        "en": "Pellets",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "A stronger pellet feed for tired beds, new plantings, and crops that need a lift at the start of the season.",
+        "ur": "تھکی ہوئی کیاریوں، نئی بوائی اور موسم کے آغاز پر اضافی خوراک کے لیے مضبوط دانے دار کھاد۔"
+      },
+      "formula": {
+        "en": "A stronger pellet feed for the opening of the season.",
+        "ur": "موسم کے آغاز کے لیے مضبوط دانے دار خوراک۔"
+      },
+      "result": {
+        "en": "Tired beds and new plantings get a lift at the start.",
+        "ur": "تھکی ہوئی کیاریوں اور نئی بوائی کو شروع میں سہارا ملتا ہے۔"
+      },
+      "before": {
+        "en": "A tired bed, or a new planting, at the start of the season.",
+        "ur": "موسم کے آغاز پر تھکی ہوئی کیاری، یا نئی بوائی۔"
+      },
+      "after": {
+        "en": "The crop has had a stronger opening feed. The later fertiliser program still follows.",
+        "ur": "فصل کو شروع کی مضبوط خوراک مل چکی۔ بعد کا کھاد کا پروگرام پھر بھی چلتا ہے۔"
+      }
+    },
+    {
+      "id": "neptune",
+      "name": {
+        "en": "Neptune Liquid Seaweed",
+        "ur": "نیپچون مائع سی ویڈ"
+      },
+      "form": {
+        "en": "Liquid",
+        "ur": "مائع"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "A seaweed concentrate for leaf colour and steady growth between solid feeds. Dilute it as the label says.",
+        "ur": "پتوں کے رنگ اور ٹھوس کھاد کے درمیان مسلسل نشوونما کے لیے سی ویڈ کا گاڑھا عرق۔ لیبل کے مطابق پتلا کریں۔"
+      },
+      "formula": {
+        "en": "Seaweed concentrate. Dilute it as the label says.",
+        "ur": "سی ویڈ کا گاڑھا عرق۔ لیبل کے مطابق پتلا کریں۔"
+      },
+      "result": {
+        "en": "Leaf colour holds more steadily between solid feeds.",
+        "ur": "ٹھوس خوراک کے درمیان پتوں کا رنگ زیادہ برقرار رہتا ہے۔"
+      },
+      "before": {
+        "en": "Vegetables, fruit trees, or a lawn between pellet feeds, with the colour slipping.",
+        "ur": "سبزیاں، پھلدار درخت، یا لان، دانے دار خوراک کے درمیان، رنگ ہلکا پڑتا ہوا۔"
+      },
+      "after": {
+        "en": "A diluted seaweed feed. It does not replace the solid fertiliser.",
+        "ur": "پتلا کیا ہوا سی ویڈ۔ یہ ٹھوس کھاد کی جگہ نہیں لیتا۔"
+      }
+    },
+    {
+      "id": "super-grass",
+      "name": {
+        "en": "Super Grass",
+        "ur": "سپر گراس"
+      },
+      "form": {
+        "en": "Pellets",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "A lawn pellet for home gardens and landscape turf. Use it when the grass is growing, then water it in.",
+        "ur": "گھریلو باغ اور لان کے لیے دانے دار کھاد۔ گھاس کے بڑھتے موسم میں ڈالیں، پھر پانی دے دیں۔"
+      },
+      "formula": {
+        "en": "Lawn pellets for growing grass.",
+        "ur": "بڑھتی گھاس کے لیے لان کے دانے۔"
+      },
+      "result": {
+        "en": "The lawn is fed while it is growing, then watered in.",
+        "ur": "لان کو بڑھتے وقت خوراک ملتی ہے، پھر پانی دے دیا جاتا ہے۔"
+      },
+      "before": {
+        "en": "A home or landscape lawn in its growing season, waiting for a feed.",
+        "ur": "گھریلو یا لینڈ سکیپ لان، بڑھتے موسم میں، خوراک کا انتظار۔"
+      },
+      "after": {
+        "en": "Pellets watered into the lawn. Bare brown patches still need seed, not fertiliser alone.",
+        "ur": "دانے لان میں پانی کے ساتھ اتر چکے۔ ننگے بھورے دھبوں کو صرف کھاد نہیں، بیج بھی چاہیے۔"
+      }
+    },
+    {
+      "id": "citrus-fruit",
+      "name": {
+        "en": "Citrus & Fruit",
+        "ur": "کھٹے پھل اور پھل"
+      },
+      "form": {
+        "en": "Pellets",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "A pellet feed for kinnow, lemon, mango, guava, and other fruit trees. Apply around the drip line, not against the trunk.",
+        "ur": "کینو، لیموں، آم، امرود اور دوسرے پھلدار درختوں کے لیے دانے دار خوراک۔ تنے سے ہٹا کر پتوں کے کنارے پر ڈالیں۔"
+      },
+      "formula": {
+        "en": "Fruit-tree pellets for the drip line.",
+        "ur": "پھلدار درخت کے دانے، پتوں کے کنارے کے لیے۔"
+      },
+      "result": {
+        "en": "Kinnow, lemon, mango, and guava are fed away from the trunk.",
+        "ur": "کینو، لیموں، آم اور امرود کو تنے سے ہٹا کر خوراک ملتی ہے۔"
+      },
+      "before": {
+        "en": "A fruit tree with little feed, or with fertiliser piled against the trunk.",
+        "ur": "پھلدار درخت جسے کم خوراک ملی ہو، یا کھاد تنے سے لگی ہو۔"
+      },
+      "after": {
+        "en": "Pellets around the drip line in early spring and again after fruit set. The trunk stays clear.",
+        "ur": "بہار کے شروع میں اور پھل بیٹھنے کے بعد دانے پتوں کے کنارے پر۔ تنا صاف رہتا ہے۔"
+      }
+    },
+    {
+      "id": "rose-flower",
+      "name": {
+        "en": "Rose & Flower",
+        "ur": "گلاب اور پھول"
+      },
+      "form": {
+        "en": "Pellets",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "home"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "A flower-bed fertiliser for roses, annuals, and pots that are grown for bloom.",
+        "ur": "گلاب، موسمی پھولوں اور گملوں کے لیے پھول والی کیاری کی کھاد۔"
+      },
+      "formula": {
+        "en": "Flower-bed pellets for roses, annuals, and bloom pots.",
+        "ur": "گلاب، موسمی پھولوں اور گملوں کے لیے پھول والی کیاری کے دانے۔"
+      },
+      "result": {
+        "en": "The flush is fed.",
+        "ur": "پھول کی بھرمار کو خوراک ملتی ہے۔"
+      },
+      "before": {
+        "en": "A rose bush or flower bed at the start of a flush.",
+        "ur": "گلاب کی جھاڑی یا پھول کی کیاری، بھرمار کے آغاز پر۔"
+      },
+      "after": {
+        "en": "The bed has its flower feed. Spent flowers still need removing.",
+        "ur": "کیاری کو پھول والی خوراک مل چکی۔ مرجھائے پھول پھر بھی اتارنے ہیں۔"
+      }
+    },
+    {
+      "id": "potting-mix",
+      "name": {
+        "en": "Potting Mix",
+        "ur": "پوٹنگ مکس"
+      },
+      "form": {
+        "en": "Mix",
+        "ur": "مرکب"
+      },
+      "audiences": [
+        "home"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "A bagged mix for pots and seed trays. It holds water without turning into mud.",
+        "ur": "گملوں اور بیج کی ٹرے کے لیے تھیلی بند مرکب۔ پانی تھامتا ہے مگر کیچڑ نہیں بنتا۔"
+      },
+      "formula": {
+        "en": "A bagged mix for pots and seed trays.",
+        "ur": "گملوں اور بیج کی ٹرے کے لیے تھیلی بند مرکب۔"
+      },
+      "result": {
+        "en": "The pot holds water without turning into mud.",
+        "ur": "گملا پانی تھامتا ہے، کیچڑ نہیں بنتا۔"
+      },
+      "before": {
+        "en": "A pot or seed tray filled with heavy garden soil that slumps when wet.",
+        "ur": "گملا یا بیج کی ٹرے، بھاری باغیچے کی مٹی سے بھری، جو گیلی ہو کر بیٹھ جائے۔"
+      },
+      "after": {
+        "en": "The mix holds water and still drains.",
+        "ur": "مرکب پانی تھامتا ہے اور نکاس بھی رہتا ہے۔"
+      }
+    },
+    {
+      "id": "not-just-mulch",
+      "name": {
+        "en": "Not Just Mulch",
+        "ur": "صرف ملچ نہیں"
+      },
+      "form": {
+        "en": "Mulch",
+        "ur": "ملچ"
+      },
+      "audiences": [
+        "home"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "A surface mulch that also feeds the bed. Keep it off stems and tree trunks.",
+        "ur": "سطح کا ایسا ملچ جو کیاری کو خوراک بھی دیتا ہے۔ تنوں اور درخت کے تنے سے ہٹا کر رکھیں۔"
+      },
+      "formula": {
+        "en": "A surface mulch that also feeds the bed.",
+        "ur": "سطح کا ملچ جو کیاری کو خوراک بھی دیتا ہے۔"
+      },
+      "result": {
+        "en": "The surface is covered and fed. Stems and trunks stay clear.",
+        "ur": "سطح ڈھکی اور خوراک ملی۔ تنے اور درخت کے تنے صاف رہتے ہیں۔"
+      },
+      "before": {
+        "en": "A bare bed losing water, or mulch sitting against a stem.",
+        "ur": "ننگی کیاری جس سے پانی اڑ رہا ہو، یا ملچ تنے سے لگا ہو۔"
+      },
+      "after": {
+        "en": "Mulch on the soil surface, kept off stems and tree trunks.",
+        "ur": "ملچ مٹی کی سطح پر، تنوں اور درخت کے تنے سے ہٹا کر۔"
+      }
+    },
+    {
+      "id": "super-rock",
+      "name": {
+        "en": "Super Rock",
+        "ur": "سپر راک"
+      },
+      "form": {
+        "en": "Minerals",
+        "ur": "معدنیات"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "A rock-mineral product for soils that need a broader mineral supply, not only nitrogen.",
+        "ur": "ایسی زمین کے لیے معدنی مرکب جسے صرف نائٹروجن نہیں، وسیع معدنی خوراک چاہیے۔"
+      },
+      "formula": {
+        "en": "Rock minerals, for more than a nitrogen-only feed.",
+        "ur": "پتھر کے معدنیات، صرف نائٹروجن والی خوراک سے آگے۔"
+      },
+      "result": {
+        "en": "The soil gets a broader mineral supply.",
+        "ur": "مٹی کو وسیع معدنی خوراک ملتی ہے۔"
+      },
+      "before": {
+        "en": "Soil that has had nitrogen and still looks short of minerals.",
+        "ur": "زمین جسے نائٹروجن مل چکی ہو اور معدنیات پھر بھی کم لگیں۔"
+      },
+      "after": {
+        "en": "Minerals in the soil. This is not a quick green-up of the leaves.",
+        "ur": "معدنیات مٹی میں۔ یہ پتوں کا فوری ہرا ہونا نہیں۔"
+      }
+    },
+    {
+      "id": "super-cal",
+      "name": {
+        "en": "Super Cal",
+        "ur": "سپر کیل"
+      },
+      "form": {
+        "en": "Liquid",
+        "ur": "مائع"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "A liquid calcium product for tight soil that is hard to wet. It is a soil treatment, not a quick leaf spray for every crop.",
+        "ur": "سخت مٹی کے لیے مائع کیلشیم، جہاں پانی مشکل سے اترتا ہے۔ یہ زمین کا علاج ہے، ہر فصل کا فوری پتوں والا سپرے نہیں۔"
+      },
+      "formula": {
+        "en": "Liquid calcium for tight soil.",
+        "ur": "سخت مٹی کے لیے مائع کیلشیم۔"
+      },
+      "result": {
+        "en": "The ground is treated so it can take water. It is not a leaf spray for every crop.",
+        "ur": "زمین کا علاج ہوتا ہے تاکہ پانی لے سکے۔ یہ ہر فصل کا پتوں والا سپرے نہیں۔"
+      },
+      "before": {
+        "en": "Soil that sheds water or locks hard after watering.",
+        "ur": "مٹی جو پانی بہا دے، یا پانی کے بعد سخت ہو جائے۔"
+      },
+      "after": {
+        "en": "A calcium soil treatment over time. One watering does not rebuild the soil.",
+        "ur": "وقت کے ساتھ کیلشیم والا زمینی علاج۔ ایک بار پانی سے مٹی نہیں سنورتی۔"
+      }
+    },
+    {
+      "id": "blood-bone-plus",
+      "name": {
+        "en": "Blood & Bone Plus",
+        "ur": "بلڈ اینڈ بون پلس"
+      },
+      "form": {
+        "en": "Pellets",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "A classic blood-and-bone style pellet with extra minerals for beds, shrubs, and planting holes.",
+        "ur": "کیاریوں، جھاڑیوں اور پودے لگانے کے گڑھے کے لیے اضافی معدنیات کے ساتھ بلڈ اینڈ بون طرز کے دانے۔"
+      },
+      "formula": {
+        "en": "Blood-and-bone pellets with extra minerals.",
+        "ur": "اضافی معدنیات کے ساتھ بلڈ اینڈ بون کے دانے۔"
+      },
+      "result": {
+        "en": "Beds, shrubs, and planting holes get that feed.",
+        "ur": "کیاریوں، جھاڑیوں اور پودے لگانے کے گڑھے کو یہ خوراک ملتی ہے۔"
+      },
+      "before": {
+        "en": "A planting hole or shrub bed with little feed in it.",
+        "ur": "پودے کا گڑھا یا جھاڑی کی کیاری، جس میں خوراک کم ہو۔"
+      },
+      "after": {
+        "en": "Pellets in the bed or mixed through the hole, not piled on the stem.",
+        "ur": "دانے کیاری میں یا گڑھے کی مٹی میں ملے ہوئے، تنے پر ڈھیر نہیں۔"
+      }
+    },
+    {
+      "id": "super-feed",
+      "name": {
+        "en": "Super Feed",
+        "ur": "سپر فیڈ"
+      },
+      "form": {
+        "en": "Liquid",
+        "ur": "مائع"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": true,
+      "summary": {
+        "en": "An all-purpose liquid fertiliser for pots, vegetables, and a quick feed during active growth.",
+        "ur": "گملوں، سبزیوں اور تیز نشوونما کے دوران فوری خوراک کے لیے ہمہ گیر مائع کھاد۔"
+      },
+      "formula": {
+        "en": "An all-purpose liquid fertiliser.",
+        "ur": "ہمہ گیر مائع کھاد۔"
+      },
+      "result": {
+        "en": "Pots and vegetables get a feed during active growth.",
+        "ur": "گملوں اور سبزیوں کو تیز نشوونما کے دوران خوراک ملتی ہے۔"
+      },
+      "before": {
+        "en": "A pot or a vegetable row in active growth, between solid feeds.",
+        "ur": "گملا یا سبزی کی قطار، تیز نشوونما میں، ٹھوس خوراک کے درمیان۔"
+      },
+      "after": {
+        "en": "A liquid feed while growth is moving. The rate comes from the label.",
+        "ur": "نشوونما چلتے ہوئے مائع خوراک۔ مقدار لیبل سے آتی ہے۔"
+      }
+    },
+    {
+      "id": "lawn-booster",
+      "name": {
+        "en": "Lawn & Garden Booster",
+        "ur": "لان اور باغ بوسٹر"
+      },
+      "form": {
+        "en": "Liquid",
+        "ur": "مائع"
+      },
+      "audiences": [
+        "home"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A liquid boost for lawns and mixed garden beds between pellet applications.",
+        "ur": "دانے دار کھاد کے درمیان لان اور ملی جلی کیاریوں کے لیے مائع اضافہ۔"
+      },
+      "formula": {
+        "en": "A liquid boost used between pellet rounds.",
+        "ur": "دانے دار خوراک کے درمیان مائع اضافہ۔"
+      },
+      "result": {
+        "en": "Lawns and mixed beds are fed between the pellet applications.",
+        "ur": "لان اور ملی جلی کیاریوں کو دانوں کے درمیان خوراک ملتی ہے۔"
+      },
+      "before": {
+        "en": "A lawn or mixed bed in the gap between pellet feeds.",
+        "ur": "لان یا ملی جلی کیاری، دانے دار خوراک کے وقفے میں۔"
+      },
+      "after": {
+        "en": "A liquid boost, with the pellet program still in place.",
+        "ur": "مائع اضافہ، اور دانوں کا پروگرام اپنی جگہ۔"
+      }
+    },
+    {
+      "id": "blood-bone-fines",
+      "name": {
+        "en": "Blood & Bone Traditional Fines",
+        "ur": "بلڈ اینڈ بون باریک"
+      },
+      "form": {
+        "en": "Fines",
+        "ur": "باریک"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A finer blood-and-bone for pots, seed beds, and places where coarse pellets are awkward.",
+        "ur": "گملوں، بیج کی کیاری اور ان جگہوں کے لیے باریک بلڈ اینڈ بون جہاں موٹے دانے اچھے نہیں۔"
+      },
+      "formula": {
+        "en": "A finer blood-and-bone.",
+        "ur": "باریک بلڈ اینڈ بون۔"
+      },
+      "result": {
+        "en": "Pots and seed beds can take a feed where coarse pellets are awkward.",
+        "ur": "گملے اور بیج کی کیاری وہاں خوراک لے سکتے ہیں جہاں موٹے دانے اچھے نہیں۔"
+      },
+      "before": {
+        "en": "A pot or seed bed where coarse pellets sit on the surface.",
+        "ur": "گملا یا بیج کی کیاری، جہاں موٹے دانے سطح پر پڑے رہیں۔"
+      },
+      "after": {
+        "en": "Fines mixed through the top of the mix.",
+        "ur": "باریک خوراک مرکب کی اوپری تہہ میں ملی ہوئی۔"
+      }
+    },
+    {
+      "id": "liquid-potash",
+      "name": {
+        "en": "Liquid Potash",
+        "ur": "مائع پوٹاش"
+      },
+      "form": {
+        "en": "Liquid",
+        "ur": "مائع"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A potassium liquid for flowering, fruit fill, and plants that have enough nitrogen already.",
+        "ur": "پھول، پھل بھرنے اور ان پودوں کے لیے پوٹاشیم مائع جنہیں نائٹروجن پہلے ہی مل چکی ہو۔"
+      },
+      "formula": {
+        "en": "A potassium liquid.",
+        "ur": "پوٹاشیم مائع۔"
+      },
+      "result": {
+        "en": "Flowering and fruit fill, on plants that already have enough nitrogen.",
+        "ur": "پھول اور پھل بھرنا، ان پودوں پر جنہیں نائٹروجن پہلے ہی کافی مل چکی ہو۔"
+      },
+      "before": {
+        "en": "Flowers or filling fruit on a plant that does not need more nitrogen.",
+        "ur": "پھول یا بھرتا پھل، ایسے پودے پر جسے مزید نائٹروجن نہیں چاہیے۔"
+      },
+      "after": {
+        "en": "Potassium for the flower and the fruit. No extra nitrogen on top.",
+        "ur": "پھول اور پھل کے لیے پوٹاشیم۔ اوپر سے مزید نائٹروجن نہیں۔"
+      }
+    },
+    {
+      "id": "nurture",
+      "name": {
+        "en": "Nurture",
+        "ur": "نرچر"
+      },
+      "form": {
+        "en": "Liquid",
+        "ur": "مائع"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A gentle all-purpose liquid for seedlings, pots, and regular feeding through the growing months.",
+        "ur": "پنیری، گملوں اور بڑھتے مہینوں کی باقاعدہ خوراک کے لیے نرم ہمہ گیر مائع۔"
+      },
+      "formula": {
+        "en": "A gentle all-purpose liquid.",
+        "ur": "نرم ہمہ گیر مائع۔"
+      },
+      "result": {
+        "en": "Seedlings and pots get a light feed through the growing months.",
+        "ur": "پنیری اور گملوں کو بڑھتے مہینوں میں ہلکی خوراک ملتی ہے۔"
+      },
+      "before": {
+        "en": "A seedling with its first true leaves.",
+        "ur": "پنیری، جس کے پہلے اصلی پتے آ چکے ہوں۔"
+      },
+      "after": {
+        "en": "A light regular feed. Too much nitrogen makes the leaves soft.",
+        "ur": "ہلکی باقاعدہ خوراک۔ زیادہ نائٹروجن پتوں کو نرم کر دیتی ہے۔"
+      }
+    },
+    {
+      "id": "aussie-natives",
+      "name": {
+        "en": "Aussie Natives",
+        "ur": "سخت مقامی پودے"
+      },
+      "form": {
+        "en": "Pellets",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "home"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A milder pellet for hardy and native-style shrubs that dislike a heavy feed. In Pakistan it suits tough ornamentals and low-water shrubs.",
+        "ur": "سخت اور مقامی طرز کی جھاڑیوں کے لیے ہلکے دانے، جنہیں بھاری خوراک راس نہیں آتی۔ پاکستان میں کم پانی والی سختی جھاڑیوں کے لیے موزوں ہے۔"
+      },
+      "formula": {
+        "en": "A milder pellet for shrubs that dislike a heavy feed.",
+        "ur": "ہلکے دانے، ان جھاڑیوں کے لیے جنہیں بھاری خوراک راس نہیں آتی۔"
+      },
+      "result": {
+        "en": "Tough ornamentals and low-water shrubs are fed without a heavy dose.",
+        "ur": "سخت سجاوٹی اور کم پانی والی جھاڑیوں کو بھاری مقدار کے بغیر خوراک ملتی ہے۔"
+      },
+      "before": {
+        "en": "A hardy shrub that would be pushed too hard by a strong fertiliser.",
+        "ur": "سخت جھاڑی، جسے تیز کھاد بہت دھکیل دے۔"
+      },
+      "after": {
+        "en": "A mild pellet, watered in.",
+        "ur": "ہلکے دانے، پانی دے کر۔"
+      }
+    },
+    {
+      "id": "guano",
+      "name": {
+        "en": "Katek Guano",
+        "ur": "کیٹک گوانو"
+      },
+      "form": {
+        "en": "Granules",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A guano granule used where flowers and fruit need phosphorus support in the soil.",
+        "ur": "گوانو کے دانے، جہاں پھول اور پھل کو مٹی میں فاسفورس کی مدد چاہیے۔"
+      },
+      "formula": {
+        "en": "Guano granules for phosphorus in the soil.",
+        "ur": "مٹی میں فاسفورس کے لیے گوانو کے دانے۔"
+      },
+      "result": {
+        "en": "Flowers and fruit get phosphorus support in the soil.",
+        "ur": "پھول اور پھل کو مٹی میں فاسفورس کی مدد ملتی ہے۔"
+      },
+      "before": {
+        "en": "Flowers or fruit where the soil is short of phosphorus.",
+        "ur": "پھول یا پھل، جہاں مٹی میں فاسفورس کم ہو۔"
+      },
+      "after": {
+        "en": "Granules in the soil. This is not a leaf spray.",
+        "ur": "دانے مٹی میں۔ یہ پتوں والا سپرے نہیں۔"
+      }
+    },
+    {
+      "id": "genesis",
+      "name": {
+        "en": "Genesis Tree Start",
+        "ur": "جینیسس ٹری سٹارٹ"
+      },
+      "form": {
+        "en": "Pellets",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "home",
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A planting fertiliser for new trees. Mix it into the backfill soil, not in a pile against the roots.",
+        "ur": "نئے درخت لگانے کی کھاد۔ اسے واپس بھری جانے والی مٹی میں ملائيں، جڑوں پر ڈھیر نہ لگائیں۔"
+      },
+      "formula": {
+        "en": "Planting pellets for a new tree.",
+        "ur": "نئے درخت کے لیے پودے لگانے کے دانے۔"
+      },
+      "result": {
+        "en": "The feed is mixed through the backfill, not piled on the roots.",
+        "ur": "خوراک واپس بھری جانے والی مٹی میں ملتی ہے، جڑوں پر ڈھیر نہیں لگتی۔"
+      },
+      "before": {
+        "en": "A new tree in the hole, roots still bare of feed.",
+        "ur": "گڑھے میں نیا درخت، جڑوں کے پاس ابھی خوراک نہیں۔"
+      },
+      "after": {
+        "en": "Fertiliser mixed through the soil that goes back in the hole.",
+        "ur": "کھاد اس مٹی میں ملی ہوئی جو گڑھے میں واپس بھری جائے۔"
+      }
+    },
+    {
+      "id": "custom-blend",
+      "name": {
+        "en": "Custom Blend",
+        "ur": "حسبِ ضرورت ملاوٹ"
+      },
+      "form": {
+        "en": "Blend",
+        "ur": "ملاوٹ"
+      },
+      "audiences": [
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A fertiliser blend made for one soil and one crop. Send the crop, area, and a soil test if you have one.",
+        "ur": "ایک زمین اور ایک فصل کے لیے بنائی گئی ملاوٹ۔ فصل، رقبہ اور اگر ہو تو مٹی کا ٹیسٹ بھیجیں۔"
+      },
+      "formula": {
+        "en": "A blend made for one soil and one crop.",
+        "ur": "ایک زمین اور ایک فصل کے لیے بنائی گئی ملاوٹ۔"
+      },
+      "result": {
+        "en": "The quote follows the crop, the area, and a soil test if you have one.",
+        "ur": "قیمت فصل، رقبے، اور اگر ہو تو مٹی کے ٹیسٹ کے مطابق بنتی ہے۔"
+      },
+      "before": {
+        "en": "A commercial field with no blend matched to that crop and that soil.",
+        "ur": "تجارتی کھیت، جس کی ملاوٹ اس فصل اور اس زمین کے مطابق نہ ہو۔"
+      },
+      "after": {
+        "en": "A blend quoted for that soil and that crop.",
+        "ur": "اسی زمین اور اسی فصل کے لیے بتائی گئی ملاوٹ۔"
+      }
+    },
+    {
+      "id": "haymaker",
+      "name": {
+        "en": "HayMaker",
+        "ur": "ہے میکر"
+      },
+      "form": {
+        "en": "Pellets",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A pasture fertiliser for growers who cut hay and need the stand to recover after a cut.",
+        "ur": "چراگاہ کی کھاد، ان کاشتکاروں کے لیے جو گھاس کاٹتے ہیں اور کٹائی کے بعد کھیت کو سنبھالنا ہوتا ہے۔"
+      },
+      "formula": {
+        "en": "Pasture pellets for a stand that is cut for hay.",
+        "ur": "چراگاہ کے دانے، اس کھیت کے لیے جسے گھاس کے لیے کاٹا جائے۔"
+      },
+      "result": {
+        "en": "The stand is fed so it can recover after a cut.",
+        "ur": "کھیت کو خوراک ملتی ہے تاکہ کٹائی کے بعد سنبھل سکے۔"
+      },
+      "before": {
+        "en": "A pasture just cut for hay, the stand looking thin.",
+        "ur": "چراگاہ ابھی گھاس کے لیے کٹی ہو، کھیت پتلا دکھے۔"
+      },
+      "after": {
+        "en": "The stand is fed for recovery. Water and the next cut still decide the hay.",
+        "ur": "کھیت سنبھلنے کے لیے خوراک پا چکا۔ گھاس پھر بھی پانی اور اگلی کٹائی پر رہتی ہے۔"
+      }
+    },
+    {
+      "id": "lucerne-prime",
+      "name": {
+        "en": "Lucerne Prime",
+        "ur": "لوسرن پرائم"
+      },
+      "form": {
+        "en": "Pellets",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A blend aimed at lucerne stands. Lucerne fixes nitrogen, so the feed is built around the other nutrients the crop still needs.",
+        "ur": "لوسرن کے کھیت کے لیے ملاوٹ۔ لوسرن نائٹروجن خود جوڑتا ہے، اس لیے خوراک باقی غذائی اجزا کے گرد بنائی جاتی ہے۔"
+      },
+      "formula": {
+        "en": "A lucerne blend built around the nutrients other than nitrogen.",
+        "ur": "لوسرن کی ملاوٹ، نائٹروجن کے سوا باقی غذائی اجزا کے گرد۔"
+      },
+      "result": {
+        "en": "Lucerne keeps fixing its own nitrogen. The blend covers the rest.",
+        "ur": "لوسرن اپنی نائٹروجن خود جوڑتا رہتا ہے۔ ملاوٹ باقی اجزا پورے کرتی ہے۔"
+      },
+      "before": {
+        "en": "A lucerne stand fed as if it needed a nitrogen fertiliser.",
+        "ur": "لوسرن کا کھیت، ایسے کھلایا گیا جیسے اسے نائٹروجن کھاد چاہیے۔"
+      },
+      "after": {
+        "en": "A blend for the nutrients the crop still needs.",
+        "ur": "ان غذائی اجزا کی ملاوٹ جو فصل کو اب بھی چاہییں۔"
+      }
+    },
+    {
+      "id": "organic-gold",
+      "name": {
+        "en": "Poultry Manure Compost",
+        "ur": "پولٹری کھاد کمپوسٹ"
+      },
+      "form": {
+        "en": "Compost",
+        "ur": "کمپوسٹ"
+      },
+      "audiences": [
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "Composted poultry manure for commercial beds and orchards. Use composted material, not raw manure against young plants.",
+        "ur": "تجارتی کیاریوں اور باغات کے لیے کمپوسٹ شدہ مرغی کی کھاد۔ کچی کھاد نوجوان پودوں سے لگ کر نہ ڈالیں۔"
+      },
+      "formula": {
+        "en": "Composted poultry manure.",
+        "ur": "کمپوسٹ شدہ مرغی کی کھاد۔"
+      },
+      "result": {
+        "en": "Commercial beds and orchards get composted manure, not raw manure on young plants.",
+        "ur": "تجارتی کیاریوں اور باغات کو کمپوسٹ شدہ کھاد ملتی ہے، نوجوان پودوں پر کچی کھاد نہیں۔"
+      },
+      "before": {
+        "en": "A commercial bed or orchard that needs manure.",
+        "ur": "تجارتی کیاری یا باغ، جسے کھاد چاہیے۔"
+      },
+      "after": {
+        "en": "Composted material on the bed. Raw manure stays off young plants.",
+        "ur": "کمپوسٹ شدہ مواد کیاری پر۔ کچی کھاد نوجوان پودوں سے ہٹی رہتی ہے۔"
+      }
+    },
+    {
+      "id": "revive",
+      "name": {
+        "en": "Revive",
+        "ur": "ریوائیو"
+      },
+      "form": {
+        "en": "Pellets",
+        "ur": "دانے"
+      },
+      "audiences": [
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A pasture pellet for tired grazing country that needs organic matter as well as nutrients.",
+        "ur": "تھکی ہوئی چراگاہ کے لیے دانے، جہاں غذائی اجزا کے ساتھ نامیاتی مادہ بھی چاہیے۔"
+      },
+      "formula": {
+        "en": "Pasture pellets that carry organic matter as well as nutrients.",
+        "ur": "چراگاہ کے دانے، غذائی اجزا کے ساتھ نامیاتی مادہ بھی۔"
+      },
+      "result": {
+        "en": "Tired grazing country gets nutrients and organic matter.",
+        "ur": "تھکی ہوئی چراگاہ کو غذائی اجزا اور نامیاتی مادہ ملتا ہے۔"
+      },
+      "before": {
+        "en": "Thin grazing country, short of organic matter.",
+        "ur": "پتلی چراگاہ، نامیاتی مادے سے خالی۔"
+      },
+      "after": {
+        "en": "Pellets for nutrients and organic matter. The paddock still needs rest from grazing.",
+        "ur": "غذائی اجزا اور نامیاتی مادے کے دانے۔ چراگاہ کو چرائی سے آرام پھر بھی چاہیے۔"
+      }
+    },
+    {
+      "id": "super-kelp",
+      "name": {
+        "en": "Super Kelp",
+        "ur": "سپر کیلپ"
+      },
+      "form": {
+        "en": "Liquid",
+        "ur": "مائع"
+      },
+      "audiences": [
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A kelp liquid for commercial programs that already use solid fertiliser and want a biological foliar between passes.",
+        "ur": "تجارتی پروگرام کے لیے کیلپ مائع، جہاں ٹھوس کھاد پہلے سے ہو اور درمیان میں حیاتیاتی فولیار چاہیے۔"
+      },
+      "formula": {
+        "en": "Kelp liquid for a foliar between solid fertiliser passes.",
+        "ur": "کیلپ مائع، ٹھوس کھاد کے چکر کے درمیان فولیار کے لیے۔"
+      },
+      "result": {
+        "en": "A biological spray sits between the solid rounds.",
+        "ur": "حیاتیاتی سپرے ٹھوس خوراک کے چکروں کے درمیان آتا ہے۔"
+      },
+      "before": {
+        "en": "A commercial crop already on solid fertiliser, in the gap between passes.",
+        "ur": "تجارتی فصل، ٹھوس کھاد پر، چکروں کے وقفے میں۔"
+      },
+      "after": {
+        "en": "A kelp foliar. The solid program stays.",
+        "ur": "کیلپ فولیار۔ ٹھوس پروگرام اپنی جگہ رہتا ہے۔"
+      }
+    },
+    {
+      "id": "superstart",
+      "name": {
+        "en": "SuperStart Trio",
+        "ur": "سپر سٹارٹ ٹریو"
+      },
+      "form": {
+        "en": "Starter",
+        "ur": "آغاز"
+      },
+      "audiences": [
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A starter for sowing and transplanting. It sits with the young root, then the main fertiliser program takes over.",
+        "ur": "بوائی اور پودا لگانے کا آغاز۔ یہ نوجوان جڑ کے ساتھ رہتا ہے، پھر اصل کھاد کا پروگرام سنبھال لیتا ہے۔"
+      },
+      "formula": {
+        "en": "A starter for sowing and transplanting.",
+        "ur": "بوائی اور پودا لگانے کا آغاز۔"
+      },
+      "result": {
+        "en": "The young root is fed. The main fertiliser program comes later.",
+        "ur": "نوجوان جڑ کو خوراک ملتی ہے۔ اصل کھاد کا پروگرام بعد میں آتا ہے۔"
+      },
+      "before": {
+        "en": "Seed or a new transplant with nothing at the young root.",
+        "ur": "بیج یا نیا پودا، نوجوان جڑ کے پاس کچھ نہیں۔"
+      },
+      "after": {
+        "en": "A starter with the young root, then the main fertiliser.",
+        "ur": "نوجوان جڑ کے ساتھ آغاز، پھر اصل کھاد۔"
+      }
+    },
+    {
+      "id": "superstar-zn",
+      "name": {
+        "en": "SuperStar Zn",
+        "ur": "سپر سٹار زنک"
+      },
+      "form": {
+        "en": "Trace",
+        "ur": "خرد جز"
+      },
+      "audiences": [
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A zinc product for crops that show zinc hunger, including rice and wheat on many Pakistani soils. Follow the label rate.",
+        "ur": "زنک کی کمی والی فصلوں کے لیے، جن میں پاکستان کی بہت سی زمینوں پر چاول اور گندم شامل ہیں۔ مقدار لیبل سے لیں۔"
+      },
+      "formula": {
+        "en": "A zinc product. The rate is the rate on the label.",
+        "ur": "زنک کی مصنوع۔ مقدار وہی ہے جو لیبل پر ہو۔"
+      },
+      "result": {
+        "en": "Rice and wheat that show zinc hunger get zinc. It does not replace the main fertiliser.",
+        "ur": "چاول اور گندم جن میں زنک کی کمی دکھے، انہیں زنک ملتا ہے۔ یہ اصل کھاد کی جگہ نہیں لیتا۔"
+      },
+      "before": {
+        "en": "Rice or wheat with the pale, short growth of zinc hunger.",
+        "ur": "چاول یا گندم، زنک کی کمی والا ہلکا اور چھوٹا قد۔"
+      },
+      "after": {
+        "en": "Zinc at the label rate, beside the main fertiliser.",
+        "ur": "لیبل کی مقدار میں زنک، اصل کھاد کے ساتھ۔"
+      }
+    },
+    {
+      "id": "super-phoska",
+      "name": {
+        "en": "Super Phoska + TE",
+        "ur": "سپر فوسکا"
+      },
+      "form": {
+        "en": "Blend",
+        "ur": "ملاوٹ"
+      },
+      "audiences": [
+        "commercial"
+      ],
+      "featured": false,
+      "summary": {
+        "en": "A phosphorus blend with trace elements for soils that need more than a straight nitrogen fertiliser.",
+        "ur": "خرد اجزا کے ساتھ فاسفورس ملاوٹ، ان زمینوں کے لیے جنہیں صرف نائٹروجن کھاد کافی نہیں۔"
+      },
+      "formula": {
+        "en": "A phosphorus blend with trace elements.",
+        "ur": "خرد اجزا کے ساتھ فاسفورس ملاوٹ۔"
+      },
+      "result": {
+        "en": "Soils that need more than straight nitrogen get phosphorus and traces.",
+        "ur": "جن زمینوں کو صرف نائٹروجن کافی نہیں، انہیں فاسفورس اور خرد اجزا ملتے ہیں۔"
+      },
+      "before": {
+        "en": "A soil running on nitrogen alone.",
+        "ur": "زمین جو صرف نائٹروجن پر چل رہی ہو۔"
+      },
+      "after": {
+        "en": "Phosphorus and trace elements in the program. The rate comes from the label.",
+        "ur": "پروگرام میں فاسفورس اور خرد اجزا۔ مقدار لیبل سے آتی ہے۔"
+      }
+    }
   ],
   "guides": [
-    {"id":"citrus","title":{"en":"How to grow healthy citrus","ur":"صحت مند مالٹا اور لیموں کیسے اگائیں"},"product":"citrus-fruit","paras":{"en":["Give kinnow, lemon, and sweet orange full sun and soil that drains. Water deeply through flowering and fruit fill, then ease off in the cool months.","Feed with a citrus and fruit pellet in early spring and again after fruit set. A seaweed liquid between those feeds supports leaf colour. Keep mulch and fertiliser off the trunk."],"ur":["کینو، لیموں اور میٹھے مالٹے کو پوری دھوپ اور نکاس والی مٹی دیں۔ پھول اور پھل بھرنے کے دوران گہرا پانی دیں، ٹھنڈے مہینوں میں ہلکا کر دیں۔","بہار کے شروع میں اور پھل بیٹھنے کے بعد کھٹے پھل والی دانے دار کھاد دیں۔ درمیان میں سی ویڈ مائع پتوں کا رنگ سنبھالتا ہے۔ ملچ اور کھاد تنے سے ہٹا کر رکھیں۔"]}},
-    {"id":"roses","title":{"en":"How to grow roses","ur":"گلاب کیسے اگائیں"},"product":"rose-flower","paras":{"en":["Roses want morning sun, air around the bush, and water at the soil rather than on the leaves.","Use a rose and flower pellet at the start of a flush. A light liquid feed can follow once the buds are moving. Remove spent flowers."],"ur":["گلاب کو صبح کی دھوپ، جھاڑی کے گرد ہوا، اور پتوں کی بجائے مٹی پر پانی چاہیے۔","پھول کی بھرمار کے آغاز پر گلاب والی دانے دار کھاد دیں۔ کلیوں کے چلنے پر ہلکی مائع خوراک دے سکتے ہیں۔ مرجھائے پھول اتار دیں۔"]}},
-    {"id":"lawn","title":{"en":"How to feed a lawn","ur":"لان کو خوراک کیسے دیں"},"product":"super-grass","paras":{"en":["Mow a little higher in hot weather. Water deeply once or twice a week rather than sprinkling every day.","Spread a lawn pellet when the grass is actively growing, then water it in. Patchy brown lawns also need seed and soil contact, not fertiliser alone."],"ur":["گرمی میں گھاس تھوڑی اونچی رکھیں۔ ہر روز چھینٹا دینے کی بجائے ہفتے میں ایک یا دو بار گہرا پانی دیں۔","گھاس کے بڑھتے وقت لان کے دانے بکھیریں، پھر پانی دے دیں۔ دھبے دار بھوری لان کو صرف کھاد نہیں، بیج اور مٹی سے ملاپ بھی چاہیے۔"]}},
-    {"id":"clay","title":{"en":"How to improve tight soil","ur":"سخت مٹی کیسے سنواریں"},"product":"super-cal","paras":{"en":["Clay holds water and then locks hard. Do not dig it while it is wet. Add organic matter each season and keep the surface mulched.","A calcium soil treatment can help tight ground take water. It is slow work. One watering will not rebuild the soil."],"ur":["چکنی مٹی پانی تھام کر پھر سخت ہو جاتی ہے۔ گیلی ہو تو کھودیں نہیں۔ ہر موسم نامیاتی مادہ ملائيں اور سطح پر ملچ رکھیں۔","کیلشیم والا زمینی علاج سخت زمین کو پانی لینے میں مدد دے سکتا ہے۔ یہ آہستہ کام ہے۔ ایک بار پانی سے مٹی نہیں سنورتی۔"]}},
-    {"id":"tomatoes","title":{"en":"How to grow tomatoes","ur":"ٹماٹر کیسے اگائیں"},"product":"super-feed","paras":{"en":["Tomatoes need sun, a stake, and even water. A swing from dry to soaking splits the fruit.","Mix a pellet fertiliser into the planting hole. Start a liquid feed when flowers appear. Keep water off the leaves late in the day."],"ur":["ٹماٹر کو دھوپ، سہارا اور برابر پانی چاہیے۔ خشک سے اچانک بھیگنے پر پھل پھٹتا ہے۔","پودے کے گڑھے میں دانے دار کھاد ملائيں۔ پھول آئیں تو مائع خوراک شروع کریں۔ دن کے آخر میں پتے گیلا نہ کریں۔"]}},
-    {"id":"vegetables","title":{"en":"Vegetables you can pick in a few weeks","ur":"چند ہفتوں میں کاٹی جانے والی سبزیاں"},"product":"nurture","paras":{"en":["Radish, spinach, coriander, lettuce, and spring onion can be ready in a few weeks if you sow them in their season. Sow a short row every fortnight.","A light liquid feed after the first true leaves is enough. Too much nitrogen makes leaves soft."],"ur":["مولی، پالک، دھنیا، سلاد پتہ اور ہرا پیاز اپنے موسم میں چند ہفتوں میں تیار ہو سکتے ہیں۔ ہر پندرہ دن ایک چھوٹی قطار بو دیں۔","پہلے اصلی پتوں کے بعد ہلکی مائع خوراک کافی ہے۔ زیادہ نائٹروجن پتوں کو نرم کر دیتی ہے۔"]}},
-    {"id":"peas","title":{"en":"How to grow peas","ur":"مٹر کیسے اگائیں"},"product":"superstart","paras":{"en":["Peas are a cool-season crop. Give climbing types a string or net before they fall over.","Peas fix nitrogen, so go easy on nitrogen fertiliser. A starter at sowing is usually enough, then compost in the bed."],"ur":["مٹر ٹھنڈے موسم کی فصل ہے۔ بیل والی اقسام کو گرنے سے پہلے رسی یا جال دے دیں۔","مٹر نائٹروجن خود جوڑتا ہے، اس لیے نائٹروجن کھاد ہلکی رکھیں۔ بوائی پر آغاز کی خوراک اور کیاری میں کمپوسٹ عام طور پر کافی ہوتے ہیں۔"]}},
-    {"id":"pumpkins","title":{"en":"How to grow pumpkins","ur":"کدو کیسے اگائیں"},"product":"super-growth","paras":{"en":["Pumpkins need warmth, room for the vines, and steady water once flowers open.","Feed the bed before sowing and cover it with mulch. A liquid feed at flowering helps the fruit set."],"ur":["کدو کو گرمی، بیلوں کے لیے جگہ، اور پھول کھلنے کے بعد برابر پانی چاہیے۔","بوائی سے پہلے کیاری کو خوراک دیں اور ملچ سے ڈھانپ دیں۔ پھول پر مائع خوراک پھل بیٹھنے میں مدد دیتی ہے۔"]}},
-    {"id":"passionfruit","title":{"en":"How to grow passionfruit","ur":"پیشن فروٹ کیسے اگائیں"},"product":"citrus-fruit","paras":{"en":["Passionfruit wants sun, a strong trellis, and soil that does not stay soggy. Water the root zone in hot weather.","Feed around the vine in spring with a fruit pellet. Keep fertiliser off the stem."],"ur":["پیشن فروٹ کو دھوپ، مضبوط جال، اور ایسی مٹی چاہیے جو بھیگی نہ رہے۔ گرمی میں جڑ کے حصے کو پانی دیں۔","بہار میں بیل کے گرد پھل والی دانے دار کھاد دیں۔ کھاد تنے سے ہٹا کر رکھیں۔"]}},
-    {"id":"seaweed","title":{"en":"What liquid seaweed is for","ur":"مائع سی ویڈ کس کام کا ہے"},"product":"neptune","paras":{"en":["Seaweed liquid is not a replacement for a full fertiliser program. It sits between solid feeds and helps plants keep colour through stress.","Dilute the concentrate. More is not better. Use it on vegetables, fruit trees, and lawns that are already being watered."],"ur":["سی ویڈ مائع پوری کھاد کی جگہ نہیں لیتا۔ یہ ٹھوس خوراک کے درمیان آتا ہے اور دباؤ میں پتوں کا رنگ سنبھالنے میں مدد دیتا ہے۔","گاڑھے عرق کو پتلا کریں۔ زیادہ بہتر نہیں۔ اسے ان سبزیوں، پھلدار درختوں اور لان پر استعمال کریں جنہیں پانی پہلے سے مل رہا ہو۔"]}}
+    {
+      "id": "citrus",
+      "title": {
+        "en": "How to grow healthy citrus",
+        "ur": "صحت مند مالٹا اور لیموں کیسے اگائیں"
+      },
+      "product": "citrus-fruit",
+      "paras": {
+        "en": [
+          "Give kinnow, lemon, and sweet orange full sun and soil that drains. Water deeply through flowering and fruit fill, then ease off in the cool months.",
+          "Feed with a citrus and fruit pellet in early spring and again after fruit set. A seaweed liquid between those feeds supports leaf colour. Keep mulch and fertiliser off the trunk."
+        ],
+        "ur": [
+          "کینو، لیموں اور میٹھے مالٹے کو پوری دھوپ اور نکاس والی مٹی دیں۔ پھول اور پھل بھرنے کے دوران گہرا پانی دیں، ٹھنڈے مہینوں میں ہلکا کر دیں۔",
+          "بہار کے شروع میں اور پھل بیٹھنے کے بعد کھٹے پھل والی دانے دار کھاد دیں۔ درمیان میں سی ویڈ مائع پتوں کا رنگ سنبھالتا ہے۔ ملچ اور کھاد تنے سے ہٹا کر رکھیں۔"
+        ]
+      }
+    },
+    {
+      "id": "roses",
+      "title": {
+        "en": "How to grow roses",
+        "ur": "گلاب کیسے اگائیں"
+      },
+      "product": "rose-flower",
+      "paras": {
+        "en": [
+          "Roses want morning sun, air around the bush, and water at the soil rather than on the leaves.",
+          "Use a rose and flower pellet at the start of a flush. A light liquid feed can follow once the buds are moving. Remove spent flowers."
+        ],
+        "ur": [
+          "گلاب کو صبح کی دھوپ، جھاڑی کے گرد ہوا، اور پتوں کی بجائے مٹی پر پانی چاہیے۔",
+          "پھول کی بھرمار کے آغاز پر گلاب والی دانے دار کھاد دیں۔ کلیوں کے چلنے پر ہلکی مائع خوراک دے سکتے ہیں۔ مرجھائے پھول اتار دیں۔"
+        ]
+      }
+    },
+    {
+      "id": "lawn",
+      "title": {
+        "en": "How to feed a lawn",
+        "ur": "لان کو خوراک کیسے دیں"
+      },
+      "product": "super-grass",
+      "paras": {
+        "en": [
+          "Mow a little higher in hot weather. Water deeply once or twice a week rather than sprinkling every day.",
+          "Spread a lawn pellet when the grass is actively growing, then water it in. Patchy brown lawns also need seed and soil contact, not fertiliser alone."
+        ],
+        "ur": [
+          "گرمی میں گھاس تھوڑی اونچی رکھیں۔ ہر روز چھینٹا دینے کی بجائے ہفتے میں ایک یا دو بار گہرا پانی دیں۔",
+          "گھاس کے بڑھتے وقت لان کے دانے بکھیریں، پھر پانی دے دیں۔ دھبے دار بھوری لان کو صرف کھاد نہیں، بیج اور مٹی سے ملاپ بھی چاہیے۔"
+        ]
+      }
+    },
+    {
+      "id": "clay",
+      "title": {
+        "en": "How to improve tight soil",
+        "ur": "سخت مٹی کیسے سنواریں"
+      },
+      "product": "super-cal",
+      "paras": {
+        "en": [
+          "Clay holds water and then locks hard. Do not dig it while it is wet. Add organic matter each season and keep the surface mulched.",
+          "A calcium soil treatment can help tight ground take water. It is slow work. One watering will not rebuild the soil."
+        ],
+        "ur": [
+          "چکنی مٹی پانی تھام کر پھر سخت ہو جاتی ہے۔ گیلی ہو تو کھودیں نہیں۔ ہر موسم نامیاتی مادہ ملائيں اور سطح پر ملچ رکھیں۔",
+          "کیلشیم والا زمینی علاج سخت زمین کو پانی لینے میں مدد دے سکتا ہے۔ یہ آہستہ کام ہے۔ ایک بار پانی سے مٹی نہیں سنورتی۔"
+        ]
+      }
+    },
+    {
+      "id": "tomatoes",
+      "title": {
+        "en": "How to grow tomatoes",
+        "ur": "ٹماٹر کیسے اگائیں"
+      },
+      "product": "super-feed",
+      "paras": {
+        "en": [
+          "Tomatoes need sun, a stake, and even water. A swing from dry to soaking splits the fruit.",
+          "Mix a pellet fertiliser into the planting hole. Start a liquid feed when flowers appear. Keep water off the leaves late in the day."
+        ],
+        "ur": [
+          "ٹماٹر کو دھوپ، سہارا اور برابر پانی چاہیے۔ خشک سے اچانک بھیگنے پر پھل پھٹتا ہے۔",
+          "پودے کے گڑھے میں دانے دار کھاد ملائيں۔ پھول آئیں تو مائع خوراک شروع کریں۔ دن کے آخر میں پتے گیلا نہ کریں۔"
+        ]
+      }
+    },
+    {
+      "id": "vegetables",
+      "title": {
+        "en": "Vegetables you can pick in a few weeks",
+        "ur": "چند ہفتوں میں کاٹی جانے والی سبزیاں"
+      },
+      "product": "nurture",
+      "paras": {
+        "en": [
+          "Radish, spinach, coriander, lettuce, and spring onion can be ready in a few weeks if you sow them in their season. Sow a short row every fortnight.",
+          "A light liquid feed after the first true leaves is enough. Too much nitrogen makes leaves soft."
+        ],
+        "ur": [
+          "مولی، پالک، دھنیا، سلاد پتہ اور ہرا پیاز اپنے موسم میں چند ہفتوں میں تیار ہو سکتے ہیں۔ ہر پندرہ دن ایک چھوٹی قطار بو دیں۔",
+          "پہلے اصلی پتوں کے بعد ہلکی مائع خوراک کافی ہے۔ زیادہ نائٹروجن پتوں کو نرم کر دیتی ہے۔"
+        ]
+      }
+    },
+    {
+      "id": "peas",
+      "title": {
+        "en": "How to grow peas",
+        "ur": "مٹر کیسے اگائیں"
+      },
+      "product": "superstart",
+      "paras": {
+        "en": [
+          "Peas are a cool-season crop. Give climbing types a string or net before they fall over.",
+          "Peas fix nitrogen, so go easy on nitrogen fertiliser. A starter at sowing is usually enough, then compost in the bed."
+        ],
+        "ur": [
+          "مٹر ٹھنڈے موسم کی فصل ہے۔ بیل والی اقسام کو گرنے سے پہلے رسی یا جال دے دیں۔",
+          "مٹر نائٹروجن خود جوڑتا ہے، اس لیے نائٹروجن کھاد ہلکی رکھیں۔ بوائی پر آغاز کی خوراک اور کیاری میں کمپوسٹ عام طور پر کافی ہوتے ہیں۔"
+        ]
+      }
+    },
+    {
+      "id": "pumpkins",
+      "title": {
+        "en": "How to grow pumpkins",
+        "ur": "کدو کیسے اگائیں"
+      },
+      "product": "super-growth",
+      "paras": {
+        "en": [
+          "Pumpkins need warmth, room for the vines, and steady water once flowers open.",
+          "Feed the bed before sowing and cover it with mulch. A liquid feed at flowering helps the fruit set."
+        ],
+        "ur": [
+          "کدو کو گرمی، بیلوں کے لیے جگہ، اور پھول کھلنے کے بعد برابر پانی چاہیے۔",
+          "بوائی سے پہلے کیاری کو خوراک دیں اور ملچ سے ڈھانپ دیں۔ پھول پر مائع خوراک پھل بیٹھنے میں مدد دیتی ہے۔"
+        ]
+      }
+    },
+    {
+      "id": "passionfruit",
+      "title": {
+        "en": "How to grow passionfruit",
+        "ur": "پیشن فروٹ کیسے اگائیں"
+      },
+      "product": "citrus-fruit",
+      "paras": {
+        "en": [
+          "Passionfruit wants sun, a strong trellis, and soil that does not stay soggy. Water the root zone in hot weather.",
+          "Feed around the vine in spring with a fruit pellet. Keep fertiliser off the stem."
+        ],
+        "ur": [
+          "پیشن فروٹ کو دھوپ، مضبوط جال، اور ایسی مٹی چاہیے جو بھیگی نہ رہے۔ گرمی میں جڑ کے حصے کو پانی دیں۔",
+          "بہار میں بیل کے گرد پھل والی دانے دار کھاد دیں۔ کھاد تنے سے ہٹا کر رکھیں۔"
+        ]
+      }
+    },
+    {
+      "id": "seaweed",
+      "title": {
+        "en": "What liquid seaweed is for",
+        "ur": "مائع سی ویڈ کس کام کا ہے"
+      },
+      "product": "neptune",
+      "paras": {
+        "en": [
+          "Seaweed liquid is not a replacement for a full fertiliser program. It sits between solid feeds and helps plants keep colour through stress.",
+          "Dilute the concentrate. More is not better. Use it on vegetables, fruit trees, and lawns that are already being watered."
+        ],
+        "ur": [
+          "سی ویڈ مائع پوری کھاد کی جگہ نہیں لیتا۔ یہ ٹھوس خوراک کے درمیان آتا ہے اور دباؤ میں پتوں کا رنگ سنبھالنے میں مدد دیتا ہے۔",
+          "گاڑھے عرق کو پتلا کریں۔ زیادہ بہتر نہیں۔ اسے ان سبزیوں، پھلدار درختوں اور لان پر استعمال کریں جنہیں پانی پہلے سے مل رہا ہو۔"
+        ]
+      }
+    }
   ],
   "news": [
-    {"id":"price-value","title":{"en":"Price and value in a fertiliser bag","ur":"کھاد کی بوری میں قیمت اور قدر"},"paras":{"en":["A cheaper bag is not always the better buy. Ask what the product is for, how long it feeds, and whether your soil can use it.","A soil that is tight, salty, or short of organic matter will waste a heavy nitrogen feed. Spend part of the budget on soil condition, not only on a big analysis number."],"ur":["سستی بوری ہمیشہ بہتر سودا نہیں ہوتی۔ پوچھیں کہ مصنوع کس کام کی ہے، کتنی دیر خوراک دیتی ہے، اور آپ کی زمین اسے استعمال کر بھی سکتی ہے یا نہیں۔","جو زمین سخت، نمکین یا نامیاتی مادے سے خالی ہو، وہ بھاری نائٹروجن کھاد ضائع کر دیتی ہے۔ بجٹ کا ایک حصہ صرف بڑے نمبر پر نہیں، زمین کی حالت پر بھی رکھیں۔"]}},
-    {"id":"biological-start","title":{"en":"A biological start for young roots","ur":"نوجوان جڑوں کے لیے حیاتیاتی آغاز"},"paras":{"en":["Seedlings and new transplants live or die on the first roots. A starter and a seaweed liquid support that stage. They do not replace the main fertiliser later.","Keep the root zone moist, not flooded. A biological product cannot help roots that are sitting in water."],"ur":["پنیری اور نیا پودا پہلی جڑوں پر جیتا یا مرتا ہے۔ آغاز کی خوراک اور سی ویڈ مائع اس مرحلے کی مدد کرتے ہیں۔ بعد کی اصل کھاد کی جگہ نہیں لیتے۔","جڑ کا حصہ نم رکھیں، ڈوبا ہوا نہیں۔ جو جڑ پانی میں بیٹھی ہو، حیاتیاتی مصنوع اس کی مدد نہیں کر سکتی۔"]}},
-    {"id":"tight-soil","title":{"en":"Tight soil needs more than one feed","ur":"سخت مٹی کو ایک خوراک سے زیادہ چاہیے"},"paras":{"en":["Many Pakistani garden beds and fields set hard after watering. Plants then show hunger even when fertiliser was applied.","Calcium treatments, compost, and mulch change that soil over seasons. Pair them with the crop fertiliser instead of choosing only one."],"ur":["پاکستان کی بہت سی کیاریاں اور کھیت پانی کے بعد سخت ہو جاتے ہیں۔ پھر کھاد ڈالنے کے باوجود پودا بھوکا دکھائی دیتا ہے۔","کیلشیم والا علاج، کمپوسٹ اور ملچ اس مٹی کو موسموں میں بدلتے ہیں۔ انہیں فصل کی کھاد کے ساتھ جوڑیں، صرف ایک چیز نہ چنیں۔"]}}
+    {
+      "id": "price-value",
+      "title": {
+        "en": "Price and value in a fertiliser bag",
+        "ur": "کھاد کی بوری میں قیمت اور قدر"
+      },
+      "paras": {
+        "en": [
+          "A cheaper bag is not always the better buy. Ask what the product is for, how long it feeds, and whether your soil can use it.",
+          "A soil that is tight, salty, or short of organic matter will waste a heavy nitrogen feed. Spend part of the budget on soil condition, not only on a big analysis number."
+        ],
+        "ur": [
+          "سستی بوری ہمیشہ بہتر سودا نہیں ہوتی۔ پوچھیں کہ مصنوع کس کام کی ہے، کتنی دیر خوراک دیتی ہے، اور آپ کی زمین اسے استعمال کر بھی سکتی ہے یا نہیں۔",
+          "جو زمین سخت، نمکین یا نامیاتی مادے سے خالی ہو، وہ بھاری نائٹروجن کھاد ضائع کر دیتی ہے۔ بجٹ کا ایک حصہ صرف بڑے نمبر پر نہیں، زمین کی حالت پر بھی رکھیں۔"
+        ]
+      }
+    },
+    {
+      "id": "biological-start",
+      "title": {
+        "en": "A biological start for young roots",
+        "ur": "نوجوان جڑوں کے لیے حیاتیاتی آغاز"
+      },
+      "paras": {
+        "en": [
+          "Seedlings and new transplants live or die on the first roots. A starter and a seaweed liquid support that stage. They do not replace the main fertiliser later.",
+          "Keep the root zone moist, not flooded. A biological product cannot help roots that are sitting in water."
+        ],
+        "ur": [
+          "پنیری اور نیا پودا پہلی جڑوں پر جیتا یا مرتا ہے۔ آغاز کی خوراک اور سی ویڈ مائع اس مرحلے کی مدد کرتے ہیں۔ بعد کی اصل کھاد کی جگہ نہیں لیتے۔",
+          "جڑ کا حصہ نم رکھیں، ڈوبا ہوا نہیں۔ جو جڑ پانی میں بیٹھی ہو، حیاتیاتی مصنوع اس کی مدد نہیں کر سکتی۔"
+        ]
+      }
+    },
+    {
+      "id": "tight-soil",
+      "title": {
+        "en": "Tight soil needs more than one feed",
+        "ur": "سخت مٹی کو ایک خوراک سے زیادہ چاہیے"
+      },
+      "paras": {
+        "en": [
+          "Many Pakistani garden beds and fields set hard after watering. Plants then show hunger even when fertiliser was applied.",
+          "Calcium treatments, compost, and mulch change that soil over seasons. Pair them with the crop fertiliser instead of choosing only one."
+        ],
+        "ur": [
+          "پاکستان کی بہت سی کیاریاں اور کھیت پانی کے بعد سخت ہو جاتے ہیں۔ پھر کھاد ڈالنے کے باوجود پودا بھوکا دکھائی دیتا ہے۔",
+          "کیلشیم والا علاج، کمپوسٹ اور ملچ اس مٹی کو موسموں میں بدلتے ہیں۔ انہیں فصل کی کھاد کے ساتھ جوڑیں، صرف ایک چیز نہ چنیں۔"
+        ]
+      }
+    }
   ]
 }

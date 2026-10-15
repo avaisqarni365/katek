@@ -317,7 +317,19 @@ html[lang="ur"] .product .tag {
   line-height: 1.05;
   margin: 0.4rem 0 0.35rem;
 }
-.product .summary { margin: 0; color: var(--muted); flex: 1; }
+.product .summary { margin: 0; color: var(--muted); }
+.claim { display: grid; gap: 0.4rem; margin-top: 0.75rem; }
+.claim p { margin: 0; padding: 0.5rem 0.6rem; }
+.claim b { display: block; margin-bottom: 0.15rem; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: #082f86; }
+html[lang="ur"] .claim b { letter-spacing: 0; text-transform: none; font-family: var(--nastaliq); font-size: 1.05rem; line-height: 1.7; }
+.claim .formula { background: #f4f7fb; border-inline-start: 3px solid #0d4ec4; }
+.claim .result { background: #e7f6ea; border-inline-start: 3px solid #1f9a38; }
+.ba { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1rem 0; }
+.ba article { margin: 0; padding: 0.9rem 0.85rem 1rem; background: #fff; border: 1px solid var(--line); }
+.ba h2 { font-size: 1.05rem; margin-bottom: 0.35rem; }
+.ba .before { border-top: 4px solid #8a5a32; background: #f7f1ea; }
+.ba .after { border-top: 4px solid #1f9a38; background: #e7f6ea; }
+.ba p { margin: 0; }
 .product .text-link {
   margin-top: 1rem;
   text-decoration: none;
@@ -918,7 +930,7 @@ body { overflow-x: clip; }
   .slide-nav { width: 36px; height: 36px; }
   .slide-nav.prev { inset-inline-start: 0.3rem; }
   .slide-nav.next { inset-inline-end: 0.3rem; }
-  .place .shots { grid-template-columns: 1fr; }
+  .place .shots, .ba { grid-template-columns: 1fr; }
   .desk a { display: inline-block; max-width: 100%; overflow-wrap: anywhere; margin-inline-end: 0.55rem; }
   .footer-grid { gap: 1.15rem; }
   .site-footer li a { display: inline-block; padding: 0.2rem 0; }
