@@ -420,10 +420,13 @@ html[lang="ur"] .site-footer h3 { font-family: var(--nastaliq); line-height: 2; 
 .site-footer ul { list-style: none; margin: 0; padding: 0; }
 .site-footer li { margin: 0.4rem 0; }
 .fine { color: #111; overflow-wrap: anywhere; }
-.social { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; margin: 0.85rem 0 0; padding: 0; max-width: 100%; }
+.social { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem; list-style: none; margin: 0.85rem 0 0; padding: 0; max-width: 100%; }
 .social li { max-width: 100%; }
 .social a { display: inline-flex; align-items: center; max-width: 100%; border: 1px solid #111; color: #111; background: #fff; padding: 0.35rem 0.6rem; font-weight: 700; font-size: 0.84rem; overflow-wrap: anywhere; }
 .social a:hover { background: #0d4ec4; color: #fff; border-color: #0d4ec4; }
+.social a.mark { width: 44px; height: 44px; padding: 0; border: 0; background: transparent; justify-content: center; }
+.social a.mark img { width: 34px; height: 34px; display: block; }
+.social a.mark:hover { background: transparent; }
 
 .cinema {
   position: relative;
