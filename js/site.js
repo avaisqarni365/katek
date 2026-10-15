@@ -1,5 +1,5 @@
 (function () {
-  const katekPhone = "";
+  const katekPhone = "+92 302 755 2073";
   const page = document.body.dataset.page || "home";
   const titles = {
     home: { en: "Katek Organic Fertilizers", ur: "کیٹک نامیاتی کھادیں" },
