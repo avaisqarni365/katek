@@ -5,7 +5,8 @@
   <title>Where to Buy · Katek</title>
   <link rel="icon" href="assets/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=11">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/styles.css?v=12">
   <script>(function(){var l=localStorage.getItem("katek-lang")||"en";var ur=l==="ur";document.documentElement.lang=ur?"ur":"en";document.documentElement.dir=ur?"rtl":"ltr";if(ur){var s=document.createElement("link");s.id="urdu-font";s.rel="stylesheet";s.href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&display=swap";document.head.appendChild(s);}})();</script>
 </head>
 <body data-page="where">
@@ -13,21 +14,27 @@
   <div data-header></div>
   <main id="main" class="band">
     <div class="wrap">
-      <p class="kicker"><span data-en>Stockists</span><span data-ur>دکاندار</span></p>
+      <p class="kicker"><span data-en>Provinces</span><span data-ur>صوبے</span></p>
       <h1><span data-en>Where to buy</span><span data-ur>کہاں سے خریدیں</span></h1>
-      <p><span data-en>A city-by-city stockist list is not published yet. Ask with your city and the product, and the quote desk will answer.</span><span data-ur>شہر وار دکانداروں کی فہرست ابھی شائع نہیں۔ اپنا شہر اور مصنوع لکھ کر پوچھیں، قیمت کا ڈیسک جواب دے گا۔</span></p>
-      <div class="cards">
-        <article class="card"><h3><span data-en>Punjab</span><span data-ur>پنجاب</span></h3><p><span data-en>Ask for a stockist.</span><span data-ur>دکاندار پوچھیں۔</span></p></article>
-        <article class="card"><h3><span data-en>Sindh</span><span data-ur>سندھ</span></h3><p><span data-en>Ask for a stockist.</span><span data-ur>دکاندار پوچھیں۔</span></p></article>
-        <article class="card"><h3><span data-en>Khyber Pakhtunkhwa</span><span data-ur>خیبر پختونخوا</span></h3><p><span data-en>Ask for a stockist.</span><span data-ur>دکاندار پوچھیں۔</span></p></article>
-        <article class="card"><h3><span data-en>Balochistan</span><span data-ur>بلوچستان</span></h3><p><span data-en>Ask for a stockist.</span><span data-ur>دکاندار پوچھیں۔</span></p></article>
-        <article class="card"><h3><span data-en>Islamabad</span><span data-ur>اسلام آباد</span></h3><p><span data-en>Ask for a stockist.</span><span data-ur>دکاندار پوچھیں۔</span></p></article>
-        <article class="card"><h3><span data-en>Gilgit-Baltistan</span><span data-ur>گلگت بلتستان</span></h3><p><span data-en>Ask for a stockist.</span><span data-ur>دکاندار پوچھیں۔</span></p></article>
-      </div>
+      <p><span data-en>Katek is at Multan Industrial Estate. The map shows the main industrial areas in every province and region of Pakistan. Blue lines run back to Multan. Green lines stay inside a province. These pins are industrial areas, not a shop list. Send your city for a quote.</span><span data-ur>کیٹک ملتان انڈسٹریل اسٹیٹ پر ہے۔ نقشہ پاکستان کے ہر صوبے اور علاقے کے بڑے انڈسٹریل ایریاز دکھاتا ہے۔ نیلی لکیریں ملتان تک جاتی ہیں۔ سبز لکیریں صوبے کے اندر رہتی ہیں۔ یہ نشان دکانیں نہیں، انڈسٹریل ایریاز ہیں۔ قیمت کے لیے اپنا شہر بھیجیں۔</span></p>
+      <p><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=30.128036,71.386444" target="_blank" rel="noopener"><span data-en>Open Multan in Google Maps</span><span data-ur>ملتان گوگل میپ میں کھولیں</span></a></p>
+    </div>
+    <div class="net">
+      <div id="pak-map" role="region" aria-label="Map of industrial areas in Pakistan"></div>
+      <aside class="net-side">
+        <input id="net-search" type="search" placeholder="Search an area" aria-label="Search industrial areas">
+        <div class="net-filters" id="net-filters"></div>
+        <div class="net-list" id="net-list"></div>
+      </aside>
+    </div>
+    <div class="wrap">
+      <p class="note-quiet"><span data-en>Mirpur and Gilgit mark the regional city. Every other pin is a named industrial area. Map tiles © Esri. Open any pin in Google Maps.</span><span data-ur>میرپور اور گلگت علاقائی شہر ہیں۔ باقی ہر نشان ایک نامی انڈسٹریل ایریا ہے۔ نقشے کی ٹائلیں © ایسری۔ کوئی سا نشان گوگل میپ میں کھولیں۔</span></p>
       <p style="margin-top:1rem"><a class="button dark" href="contact.html"><span data-en>Send your city</span><span data-ur>اپنا شہر بھیجیں</span></a></p>
     </div>
   </main>
   <div data-footer></div>
-  <script src="js/site.js?v=11"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/network.js?v=12"></script>
+  <script src="js/site.js?v=12"></script>
 </body>
 </html>

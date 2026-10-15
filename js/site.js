@@ -253,6 +253,7 @@
     if (titles[page]) document.title = titles[page][value];
     renderPhone();
     render();
+    document.dispatchEvent(new Event("katek-lang"));
   }
 
   document.querySelector("[data-search]")?.addEventListener("input", renderProducts);

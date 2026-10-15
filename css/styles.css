@@ -637,9 +637,31 @@ html[dir="rtl"] .slide-card { margin: 0 max(1.25rem, calc((100% - 1160px) / 2)) 
 .shelf-row .product[data-form="minerals"],
 .shelf-row .product[data-form="mix"],
 .shelf-row .product[data-form="mulch"] { border-top-color: #e10600; }
+.net { display: grid; grid-template-columns: 1fr 320px; width: min(1160px, calc(100% - 2rem)); height: 680px; margin: 1.1rem auto 0; background: white; border: 1px solid var(--line); box-shadow: var(--shadow); overflow: hidden; }
+#pak-map { height: 100%; min-height: 0; background: #dbe7f3; }
+.net-side { display: flex; flex-direction: column; min-height: 0; border-inline-start: 1px solid var(--line); }
+.net-side input[type="search"] { margin: 0.75rem 0.75rem 0.45rem; border: 1px solid #cfd6e0; border-radius: 3px; padding: 0.55rem 0.7rem; font: inherit; }
+.net-filters { display: flex; flex-wrap: wrap; gap: 0.35rem; padding: 0 0.75rem 0.65rem; }
+.net-filters button, .net-list button { font: inherit; cursor: pointer; }
+.net-filters button { border: 1px solid var(--line); background: white; color: var(--blue-deep); border-radius: 3px; padding: 0.22rem 0.45rem; font-size: 0.78rem; }
+.net-filters button.is-on { background: var(--blue); color: white; border-color: var(--blue); }
+.net-list { overflow: auto; border-top: 1px solid var(--line); }
+.net-list button { display: block; width: 100%; text-align: start; background: white; border: 0; border-bottom: 1px solid var(--line); padding: 0.62rem 0.8rem; color: var(--ink); }
+.net-list button small { display: block; color: var(--muted); font-size: 0.82rem; margin-top: 0.12rem; }
+.net-list button.is-on, .net-list button:hover { background: var(--blue-soft); }
+.katek-pin { background: transparent; border: 0; }
+.katek-pin i { display: block; width: 16px; height: 16px; margin-top: 4px; background: var(--blue); border: 2px solid white; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.katek-pin.is-katek i { background: var(--red); width: 20px; height: 20px; }
+.net-legend { background: white; border: 1px solid var(--line); padding: 0.45rem 0.6rem; font-size: 0.78rem; line-height: 1.45; color: var(--ink); }
+.net-legend b { font-weight: 700; }
+.leaflet-popup-content { margin: 0.7rem 0.85rem; line-height: 1.45; }
+.leaflet-popup-content a { font-weight: 700; }
 @media (max-width: 900px) {
   .au-pair, .quad, .shelf-row { grid-template-columns: 1fr 1fr; }
   .hero-slider, .slide { min-height: 380px; }
+  .net { grid-template-columns: 1fr; height: auto; }
+  #pak-map { height: 440px; }
+  .net-list { max-height: 300px; }
 }
 @media (max-width: 640px) {
   .au-pair, .quad, .shelf-row { grid-template-columns: 1fr; }
