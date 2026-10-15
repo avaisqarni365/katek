@@ -572,7 +572,7 @@ html[dir="rtl"] .plate::before {
 }
 
 @media (max-width: 1100px) {
-  .hero-grid, .pillars, .split, .cards, .grid, .footer-grid, .facts { grid-template-columns: 1fr; }
+  .hero-grid, .pillars, .split, .cards, .grid, .statements, .footer-grid, .facts { grid-template-columns: 1fr; }
   .nav-toggle { display: inline-flex; }
   .menu {
     display: none;
@@ -745,6 +745,32 @@ html[dir="rtl"] .slide-card { margin: 0 max(1.25rem, calc((100% - 1160px) / 2)) 
   .team-plate h1 { white-space: normal; text-align: center; }
   .team-banner > img { height: 220px; }
 }
+.statements { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.15rem; align-items: stretch; }
+.statements .card { border-radius: 0; box-shadow: none; transition: none; }
+.statements .card:hover { transform: none; background: white; }
+.statements .card:nth-child(3n+1) {
+  border: 3px solid #0d4ec4;
+  box-shadow: 0 0 0 5px #f4f7fb, 0 0 0 6px #0d4ec4;
+}
+.statements .card:nth-child(3n+1) h3 { color: #0d4ec4; }
+.statements .card:nth-child(3n+2) { border: 1px solid #d7eadc; border-bottom: 6px solid #1f9a38; padding: 0; }
+.statements .card:nth-child(3n+2) h3 { margin: 0; padding: 0.65rem 1.1rem; background: #1f9a38; color: white; }
+.statements .card:nth-child(3n+2) p { margin: 0; padding: 0.95rem 1.1rem 1.15rem; }
+.statements .card:nth-child(3n) {
+  border: 0;
+  background:
+    linear-gradient(#e10600, #e10600) left top / 28px 3px no-repeat,
+    linear-gradient(#e10600, #e10600) left top / 3px 28px no-repeat,
+    linear-gradient(#e10600, #e10600) right top / 28px 3px no-repeat,
+    linear-gradient(#e10600, #e10600) right top / 3px 28px no-repeat,
+    linear-gradient(#e10600, #e10600) left bottom / 28px 3px no-repeat,
+    linear-gradient(#e10600, #e10600) left bottom / 3px 28px no-repeat,
+    linear-gradient(#e10600, #e10600) right bottom / 28px 3px no-repeat,
+    linear-gradient(#e10600, #e10600) right bottom / 3px 28px no-repeat,
+    white;
+  padding: 1.35rem 1.2rem 1.25rem;
+}
+.statements .card:nth-child(3n) h3 { color: #e10600; }
 .wide-photo { width: 100%; height: 320px; object-fit: cover; display: block; }
 .split > .wide-photo { height: 100%; min-height: 280px; }
 body { overflow-x: clip; }
