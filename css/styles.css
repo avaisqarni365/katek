@@ -1,10 +1,10 @@
 :root {
-  --blue: #7ebec5;
-  --blue-deep: #3d8f98;
-  --blue-soft: #e7f5f6;
-  --green: #5aa37a;
-  --leaf: #e7f5f6;
-  --red: #7ebec5;
+  --blue: #0d4ec4;
+  --blue-deep: #082f86;
+  --blue-soft: #e7f0ff;
+  --green: #1f9a38;
+  --leaf: #e7f6ea;
+  --red: #e10600;
   --ink: #333333;
   --muted: #666666;
   --paper: #ffffff;
@@ -21,7 +21,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   color: var(--ink);
-  background: #fff;
+  background: #f4f7fb;
   font-family: var(--sans);
   font-size: 16px;
   line-height: 1.7;
@@ -73,7 +73,7 @@ html[lang="ur"] .third h3 { font-family: var(--nastaliq); line-height: 1.8; font
 .skip { position: absolute; inset-inline-start: 1rem; top: -4rem; background: var(--ink); color: white; padding: 0.45rem 0.75rem; z-index: 80; }
 .skip:focus { top: 0.5rem; }
 
-.util { background: #7ebec5; color: #fff; font-size: 0.92rem; }
+.util { background: #082f86; color: #fff; font-size: 0.92rem; }
 .util-row, .header-row { display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
 .util-row { min-height: 42px; flex-wrap: wrap; }
 .util a { color: white; font-weight: 700; }
@@ -85,8 +85,17 @@ html[lang="ur"] .third h3 { font-family: var(--nastaliq); line-height: 1.8; font
   top: 0;
   z-index: 40;
   background: #fff;
-  border-bottom: 1px solid #eee;
-  box-shadow: 0 1px 0 rgba(0,0,0,.06);
+  border-bottom: 3px solid #0d4ec4;
+  box-shadow: none;
+}
+.site-header::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0;
+  bottom: -3px;
+  width: 92px;
+  height: 3px;
+  background: #e10600;
 }
 .header-row { min-height: 88px; }
 .brand { flex: 0 0 auto; }
@@ -95,9 +104,9 @@ html[lang="ur"] .third h3 { font-family: var(--nastaliq); line-height: 1.8; font
 .menu { display: flex; gap: 0.1rem; list-style: none; margin: 0; padding: 0; align-items: center; }
 .menu > li { position: relative; }
 .menu a { text-decoration: none; color: #333; font-weight: 600; display: inline-flex; padding: 0.45rem 0.65rem; border-radius: 0; }
-.menu a[aria-current="page"], .menu a:hover { background: transparent; color: #3d8f98; }
-.menu a.menu-cta { background: #7ebec5; color: white; border-radius: 3px; }
-.menu a.menu-cta:hover { background: #3d8f98; color: white; }
+.menu a[aria-current="page"], .menu a:hover { background: transparent; color: #0d4ec4; }
+.menu a.menu-cta { background: #0d4ec4; color: white; border-radius: 3px; }
+.menu a.menu-cta:hover { background: #082f86; color: white; }
 .sub {
   display: none;
   position: absolute;
@@ -136,7 +145,7 @@ html[lang="ur"] .other { font-family: var(--display); font-size: 1.45rem; line-h
   max-width: 100%;
   white-space: normal;
   text-align: center;
-  background: #7ebec5;
+  background: #0d4ec4;
   color: white;
   text-decoration: none;
   border: 0;
@@ -576,32 +585,53 @@ html[dir="rtl"] .plate::before {
   .hero { padding-top: 1.2rem; }
   main.band h1 { font-size: clamp(2.2rem, 12vw, 3.4rem); }
 }
-.hero-slider { position: relative; background: #16343a; min-height: 480px; }
-.slide { display: none; min-height: 480px; background-size: cover; background-position: center; }
-.slide.is-on { display: grid; align-items: center; }
-.slide-card { width: min(680px, calc(100% - 2rem)); margin: 4.5rem auto; padding: 1.5rem 1.4rem; text-align: center; background: rgba(0,0,0,.48); border-radius: 3px; color: white; }
+.hero-slider { position: relative; background: #082f86; min-height: 540px; }
+.slide { display: none; position: relative; min-height: 540px; overflow: hidden; }
+.slide.is-on { display: block; }
+.slide img.slide-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.slide-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8, 28, 78, 0.82) 0%, rgba(8, 28, 78, 0.28) 62%, rgba(8, 28, 78, 0.08) 100%); }
+html[dir="rtl"] .slide-shade { background: linear-gradient(270deg, rgba(8, 28, 78, 0.82) 0%, rgba(8, 28, 78, 0.28) 62%, rgba(8, 28, 78, 0.08) 100%); }
+.slide-card { position: relative; z-index: 1; width: min(640px, calc(100% - 7rem)); margin: 0 0 0 max(1.25rem, calc((100% - 1160px) / 2)); padding: 6.2rem 0 4.2rem; text-align: start; background: none; color: white; }
+html[dir="rtl"] .slide-card { margin: 0 max(1.25rem, calc((100% - 1160px) / 2)) 0 auto; }
 .slide-card h2, .slide-card p { color: white; }
-.slide-card h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 0.4rem; }
-.slide-card .button { background: #7ebec5; }
-.slide-nav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; border: 0; background: transparent; color: white; font-size: 2.4rem; cursor: pointer; padding: 0.2rem 0.6rem; }
-.slide-nav.prev { inset-inline-start: 0.4rem; }
-.slide-nav.next { inset-inline-end: 0.4rem; }
-.au-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
-.au-pair article { background: #f6f6f6; padding: 1.3rem 1.2rem 1.15rem; }
-.au-pair h2 { margin-bottom: 0.25rem; }
-.au-pair h2 a { color: #333; text-decoration: none; }
-.au-pair h2 a:hover { color: #3d8f98; }
+.slide-card h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 0.55rem; }
+.slide-card .rule { margin-bottom: 0.8rem; }
+.slide-nav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; width: 42px; height: 42px; border: 0; border-radius: 50%; background: rgba(255,255,255,.9); color: #082f86; font-size: 1.6rem; cursor: pointer; }
+.slide-nav.prev { inset-inline-start: 1rem; }
+.slide-nav.next { inset-inline-end: 1rem; }
+.au-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.path {
+  display: flex;
+  align-items: flex-end;
+  min-height: 280px;
+  padding: 1.4rem;
+  text-decoration: none;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.path::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,30,70,.05), rgba(8,30,70,.78)); }
+.path.farm::before { background: linear-gradient(180deg, rgba(10,60,24,.05), rgba(10,60,24,.78)); }
+.path > span, .path h2, .path p { position: relative; color: white; }
+.path h2 { margin-bottom: 0.25rem; }
+.path .button, .path .button span { position: relative; margin-top: 0.8rem; background: white; color: #082f86; }
 .au-center { text-align: center; }
-.au-center h3 { font-weight: 500; color: #666; font-size: 1.15rem; }
-.quad { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.7rem; margin-top: 1.2rem; text-align: center; }
-.quad figure { margin: 0; }
+.au-center h1 { color: #082f86; }
+.au-center h3 { font-weight: 500; color: #555; font-size: 1.15rem; max-width: 40rem; margin-inline: auto; }
+.quad { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-top: 1.6rem; }
+.quad figure { margin: 0; position: relative; overflow: hidden; }
 .quad img { width: 100%; aspect-ratio: 1; object-fit: cover; }
-.quad figcaption { color: #666; font-size: 0.92rem; padding-top: 0.4rem; }
-.au-news { background: #eef3ef url("assets/field-waves.jpg") center/cover; }
-.au-news .wrap { background: rgba(255,255,255,.94); padding: 1.3rem; }
-.shelf-row { grid-template-columns: repeat(4, 1fr); gap: 0.75rem; background: transparent; border: 0; box-shadow: none; border-radius: 0; overflow: visible; }
+.quad figcaption { position: absolute; inset-inline: 0; bottom: 0; padding: 1.4rem 0.7rem 0.65rem; color: white; background: linear-gradient(transparent, rgba(8,20,50,.78)); font-weight: 600; }
+.au-news { background: #fff; }
+.shelf-row { grid-template-columns: repeat(4, 1fr); gap: 0.85rem; background: transparent; border: 0; box-shadow: none; border-radius: 0; overflow: visible; }
 .shelf-row::before { display: none; }
-.shelf-row .product { border: 1px solid #eee; border-inline-start-width: 0; text-align: center; }
+.shelf-row .product { border: 1px solid #e4eaf3; border-top: 4px solid #0d4ec4; border-inline-start-width: 1px; text-align: start; background: white; box-shadow: 0 10px 24px rgba(8, 47, 134, 0.06); }
+.shelf-row .product[data-form="liquid"] { border-top-color: #1f9a38; }
+.shelf-row .product[data-form="minerals"],
+.shelf-row .product[data-form="mix"],
+.shelf-row .product[data-form="mulch"] { border-top-color: #e10600; }
 @media (max-width: 900px) {
   .au-pair, .quad, .shelf-row { grid-template-columns: 1fr 1fr; }
   .hero-slider, .slide { min-height: 380px; }

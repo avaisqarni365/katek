@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="assets/brand-products.jpg" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=9">
+  <link rel="stylesheet" href="css/styles.css?v=10">
   <script>(function(){var l=localStorage.getItem("katek-lang")||"en";var ur=l==="ur";document.documentElement.lang=ur?"ur":"en";document.documentElement.dir=ur?"rtl":"ltr";if(ur){var s=document.createElement("link");s.id="urdu-font";s.rel="stylesheet";s.href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&display=swap";document.head.appendChild(s);}})();</script>
 </head>
 <body data-page="home">
@@ -18,30 +18,42 @@
   <div data-header></div>
   <main id="main">
     <section class="hero-slider" data-slider>
-      <article class="slide is-on" style="background-image:url('assets/brand-products.jpg')">
-        <div class="slide-card">
+      <article class="slide is-on">
+        <img class="slide-photo" src="assets/brand-products.jpg" alt="" fetchpriority="high" decoding="async">
+        <div class="slide-shade"></div>
+        <div class="wrap slide-card">
           <h2><span data-en>Slow-release natural fertiliser</span><span data-ur>آہستہ گھلنے والی قدرتی کھاد</span></h2>
+          <div class="rule"></div>
           <p><span data-en>Feed the soil as well as the plant.</span><span data-ur>زمین کو بھی خوراک دو، اور پودے کو بھی۔</span></p>
           <a class="button" href="products.html?audience=home"><span data-en>Learn more</span><span data-ur>مزید جانیں</span></a>
         </div>
       </article>
-      <article class="slide" style="background-image:url('assets/agri-lab.jpg')">
-        <div class="slide-card">
+      <article class="slide">
+        <img class="slide-photo" src="assets/agri-lab.jpg" alt="" decoding="async">
+        <div class="slide-shade"></div>
+        <div class="wrap slide-card">
           <h2><span data-en>A range of liquids</span><span data-ur>مائع کی رینج</span></h2>
+          <div class="rule"></div>
           <p><span data-en>Seaweed, calcium, zinc, and feeds between the pellets.</span><span data-ur>سی ویڈ، کیلشیم، زنک، اور دانوں کے درمیان خوراک۔</span></p>
           <a class="button" href="products.html?audience=commercial"><span data-en>Learn more</span><span data-ur>مزید جانیں</span></a>
         </div>
       </article>
-      <article class="slide" style="background-image:url('assets/field-waves.jpg')">
-        <div class="slide-card">
+      <article class="slide">
+        <img class="slide-photo" src="assets/field-waves.jpg" alt="" decoding="async">
+        <div class="slide-shade"></div>
+        <div class="wrap slide-card">
           <h2><span data-en>Biological fertilisers</span><span data-ur>حیاتیاتی کھادیں</span></h2>
+          <div class="rule"></div>
           <p><span data-en>Improve the soil, then the crop that grows in it.</span><span data-ur>پہلے مٹی سنواریں، پھر اس میں اگنے والی فصل۔</span></p>
           <a class="button" href="difference.html"><span data-en>Learn more</span><span data-ur>مزید جانیں</span></a>
         </div>
       </article>
-      <article class="slide" style="background-image:url('assets/field-machinery.jpg')">
-        <div class="slide-card">
+      <article class="slide">
+        <img class="slide-photo" src="assets/field-machinery.jpg" alt="" decoding="async">
+        <div class="slide-shade"></div>
+        <div class="wrap slide-card">
           <h2><span data-en>Let us make your blend</span><span data-ur>ہم آپ کی ملاوٹ بنائیں</span></h2>
+          <div class="rule"></div>
           <p><span data-en>Matched to your soil and your crop. Quote only.</span><span data-ur>آپ کی زمین اور فصل کے مطابق۔ صرف قیمت۔</span></p>
           <a class="button" href="product.html?id=custom-blend"><span data-en>Learn more</span><span data-ur>مزید جانیں</span></a>
         </div>
@@ -51,16 +63,20 @@
     </section>
     <section class="band">
       <div class="wrap au-pair">
-        <article>
-          <h2><a href="home-gardener.html"><span data-en>Home Gardener</span><span data-ur>گھریلو باغبان</span></a></h2>
-          <p><span data-en>Pots, lawns, roses, citrus, and garden guides.</span><span data-ur>گملے، لان، گلاب، مالٹا، اور باغ کی رہنمائی۔</span></p>
-          <a class="button" href="home-gardener.html"><span data-en>Learn more</span><span data-ur>مزید جانیں</span></a>
-        </article>
-        <article>
-          <h2><a href="commercial.html"><span data-en>Commercial Grower</span><span data-ur>تجارتی کاشتکار</span></a></h2>
-          <p><span data-en>Pasture, lucerne, orchards, and a blend for your soil.</span><span data-ur>چراگاہ، لوسرن، باغات، اور آپ کی زمین کے لیے ملاوٹ۔</span></p>
-          <a class="button" href="commercial.html"><span data-en>Learn more</span><span data-ur>مزید جانیں</span></a>
-        </article>
+        <a class="path home" href="home-gardener.html" style="background-image:url('assets/growth-days.jpg')">
+          <span>
+            <h2><span data-en>Home Gardener</span><span data-ur>گھریلو باغبان</span></h2>
+            <p><span data-en>Pots, lawns, roses, citrus, and garden guides.</span><span data-ur>گملے، لان، گلاب، مالٹا، اور باغ کی رہنمائی۔</span></p>
+            <span class="button"><span data-en>Learn more</span><span data-ur>مزید جانیں</span></span>
+          </span>
+        </a>
+        <a class="path farm" href="commercial.html" style="background-image:url('assets/field-machinery.jpg')">
+          <span>
+            <h2><span data-en>Commercial Grower</span><span data-ur>تجارتی کاشتکار</span></h2>
+            <p><span data-en>Pasture, lucerne, orchards, and a blend for your soil.</span><span data-ur>چراگاہ، لوسرن، باغات، اور آپ کی زمین کے لیے ملاوٹ۔</span></p>
+            <span class="button"><span data-en>Learn more</span><span data-ur>مزید جانیں</span></span>
+          </span>
+        </a>
       </div>
     </section>
     <section class="band white">
@@ -111,6 +127,6 @@
     </section>
   </main>
   <div data-footer></div>
-  <script src="js/site.js?v=9"></script>
+  <script src="js/site.js?v=10"></script>
 </body>
 </html>
