@@ -319,6 +319,19 @@
     event.currentTarget.dataset.touched = "true";
   });
 
+  const slider = document.querySelector("[data-slider]");
+  if (slider) {
+    const slides = [...slider.querySelectorAll(".slide")];
+    let index = 0;
+    const show = (next) => {
+      index = (next + slides.length) % slides.length;
+      slides.forEach((slide, item) => slide.classList.toggle("is-on", item === index));
+    };
+    slider.querySelector("[data-prev]")?.addEventListener("click", () => show(index - 1));
+    slider.querySelector("[data-next]")?.addEventListener("click", () => show(index + 1));
+    setInterval(() => show(index + 1), 6000);
+  }
+
   renderChrome();
   const queryLang = new URLSearchParams(location.search).get("lang");
   setLang(queryLang === "ur" || queryLang === "en" ? queryLang : (localStorage.getItem("katek-lang") || "en"));
