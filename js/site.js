@@ -18,7 +18,9 @@
     testimonials: { en: "Testimonials · Katek", ur: "تاثرات · کیٹک" },
     where: { en: "Where to Buy · Katek", ur: "کہاں سے خریدیں · کیٹک" },
     contact: { en: "Contact · Katek", ur: "رابطہ · کیٹک" },
-    shop: { en: "Shop · Katek", ur: "دکان · کیٹک" }
+    shop: { en: "Shop · Katek", ur: "دکان · کیٹک" },
+    services: { en: "Products and Services · Katek", ur: "مصنوعات اور خدمات · کیٹک" },
+    commodities: { en: "Grains · Katek", ur: "اناج · کیٹک" }
   };
 
   function lang() { return document.documentElement.lang === "ur" ? "ur" : "en"; }
@@ -28,7 +30,9 @@
     { href: "about.html", page: "about", en: "About Katek", ur: "کیٹک کے بارے", children: [
       { href: "difference.html", page: "difference", en: "The Katek Difference", ur: "کیٹک کا فرق" },
       { href: "team.html", page: "team", en: "Meet the Team", ur: "ٹیم سے ملیں" },
-      { href: "contract.html", page: "contract", en: "Contract Manufacturing", ur: "کنٹریکٹ تیاری" }
+      { href: "contract.html", page: "contract", en: "Contract Manufacturing", ur: "کنٹریکٹ تیاری" },
+      { href: "services.html", page: "services", en: "Products and Services", ur: "مصنوعات اور خدمات" },
+      { href: "commodities.html", page: "commodities", en: "Grains", ur: "اناج" }
     ]},
     { href: "home-gardener.html", page: "homeGardener", en: "Home Gardener", ur: "گھریلو باغبان", children: [
       { href: "products.html?audience=home", page: "products", en: "All Products", ur: "تمام مصنوعات" },
