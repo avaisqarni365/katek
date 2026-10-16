@@ -1,5 +1,5 @@
 (function () {
-  const katekPhone = "+92 302 755 2073";
+  const katekPhone = "+92 302 755 0273";
   const page = document.body.dataset.page || "home";
   const titles = {
     home: { en: "Katek Organic Fertilizers", ur: "کیٹک نامیاتی کھادیں" },
@@ -80,7 +80,7 @@
     if (footer) {
       footer.innerHTML = `
         <footer class="site-footer"><div class="wrap"><img class="footer-logo" src="assets/logo.png" alt="Katek"><div class="footer-grid">
-          <div><strong>Katek</strong><p class="fine"><span data-en>Organic fertilizers for home gardeners, landscapers, and commercial growers in Pakistan. Quotes only.</span><span data-ur>پاکستان کے گھریلو باغبانوں، لینڈ سکیپ والوں اور تجارتی کاشتکاروں کے لیے نامیاتی کھادیں۔ صرف قیمت۔</span></p><p class="fine"><span data-en>M/S Katek AG · 6-B, Industrial Estate, Multan · MR/0121 · FBR H495164</span><span data-ur>ایم/ایس کیٹک اے جی · 6-بی، انڈسٹریل اسٹیٹ، ملتان · MR/0121 · ایف بی آر H495164</span></p><ul class="social"><li><a class="mark" href="https://www.facebook.com/katekag" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt=""></a></li><li><a class="mark" href="https://www.instagram.com/katekag" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt=""></a></li><li><a class="mark" href="https://www.tiktok.com/@katekag" target="_blank" rel="noopener" aria-label="TikTok"><img src="assets/icon-tiktok.svg" alt=""></a></li><li><a class="mark" href="https://wa.me/923027552073" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icon-whatsapp.svg" alt=""></a></li><li><a href="mailto:info@katekag.com">info@katekag.com</a></li><li><a href="mailto:CEO@katekag.com">CEO@katekag.com</a></li></ul></div>
+          <div><strong>Katek</strong><p class="fine"><span data-en>Organic fertilizers for home gardeners, landscapers, and commercial growers in Pakistan. Quotes only.</span><span data-ur>پاکستان کے گھریلو باغبانوں، لینڈ سکیپ والوں اور تجارتی کاشتکاروں کے لیے نامیاتی کھادیں۔ صرف قیمت۔</span></p><p class="fine"><span data-en>M/S Katek AG · 6-B, Industrial Estate, Multan · MR/0121 · FBR H495164</span><span data-ur>ایم/ایس کیٹک اے جی · 6-بی، انڈسٹریل اسٹیٹ، ملتان · MR/0121 · ایف بی آر H495164</span></p><ul class="social"><li><a class="mark" href="https://www.facebook.com/katekag" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt=""></a></li><li><a class="mark" href="https://www.instagram.com/katekag" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt=""></a></li><li><a class="mark" href="https://www.tiktok.com/@katekag" target="_blank" rel="noopener" aria-label="TikTok"><img src="assets/icon-tiktok.svg" alt=""></a></li><li><a class="mark" href="https://wa.me/923027550273" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icon-whatsapp.svg" alt=""></a></li><li><a href="mailto:info@katekag.com">info@katekag.com</a></li><li><a href="mailto:CEO@katekag.com">CEO@katekag.com</a></li></ul></div>
           <div><h3><span data-en>Home gardener</span><span data-ur>گھریلو باغبان</span></h3><ul><li><a href="products.html?audience=home"><span data-en>Products</span><span data-ur>مصنوعات</span></a></li><li><a href="guides.html"><span data-en>How to guides</span><span data-ur>رہنما ہدایات</span></a></li></ul></div>
           <div><h3><span data-en>Commercial</span><span data-ur>تجارتی</span></h3><ul><li><a href="products.html?audience=commercial"><span data-en>Products</span><span data-ur>مصنوعات</span></a></li><li><a href="product.html?id=custom-blend"><span data-en>Custom blend</span><span data-ur>حسبِ ضرورت ملاوٹ</span></a></li></ul></div>
           <div><h3><span data-en>Company</span><span data-ur>کمپنی</span></h3><ul><li><a href="about.html"><span data-en>About</span><span data-ur>ہمارے بارے</span></a></li><li><a href="where.html"><span data-en>Where to buy</span><span data-ur>کہاں سے خریدیں</span></a></li><li><a href="contact.html"><span data-en>Contact</span><span data-ur>رابطہ</span></a></li><li><a href="mailto:info@katekag.com">info@katekag.com</a></li></ul></div>
@@ -119,9 +119,11 @@
     const form = (product.form.en || "").toLowerCase();
     card.dataset.form = form;
     const vessel = form === "liquid" || form === "starter" ? "bottle" : "bag";
-    const pack = branded
-      ? `<a class="pack ${vessel}" href="product.html?id=${product.id}"><span class="pouch"><span class="label"><img src="assets/logo.png" alt="Katek"><strong><span data-en>${esc(product.name.en)}</span><span data-ur>${esc(product.name.ur)}</span></strong><i></i></span></span></a>`
-      : "";
+    const pack = product.image
+      ? `<a class="pack-photo" href="product.html?id=${product.id}"><img src="${esc(product.image)}" alt=""></a>`
+      : branded
+        ? `<a class="pack ${vessel}" href="product.html?id=${product.id}"><span class="pouch"><span class="label"><img src="assets/logo.png" alt="Katek"><strong><span data-en>${esc(product.name.en)}</span><span data-ur>${esc(product.name.ur)}</span></strong><i></i></span></span></a>`
+        : "";
     card.innerHTML = `${pack}<p class="meta"><span class="tag"></span></p><h3></h3><p class="summary"></p><div class="claim"><p class="formula"><b></b><span></span></p><p class="result"><b></b><span></span></p></div><a class="text-link" href="product.html?id=${product.id}"></a>`;
     card.querySelector(".tag").textContent = tx(product.form);
     card.querySelector("h3").textContent = tx(product.name);
@@ -179,7 +181,8 @@
       return;
     }
     document.title = `${tx(product.name)} · Katek`;
-    root.innerHTML = `<p class="kicker"></p><h1></h1><p class="lead"></p><div class="claim"><p class="formula"><b></b><span></span></p><p class="result"><b></b><span></span></p></div><div class="ba"><article class="before"><h2></h2><p></p></article><article class="after"><h2></h2><p></p></article></div><p class="note-quiet"></p><p><a class="button dark"></a></p>`;
+    const shot = product.image ? `<img class="product-shot" src="${esc(product.image)}" alt="">` : "";
+    root.innerHTML = `${shot}<p class="kicker"></p><h1></h1><p class="lead"></p><div class="claim"><p class="formula"><b></b><span></span></p><p class="result"><b></b><span></span></p></div><div class="ba"><article class="before"><h2></h2><p></p></article><article class="after"><h2></h2><p></p></article></div><p class="note-quiet"></p><p><a class="button dark"></a></p>`;
     root.querySelector(".kicker").textContent = tx(product.form);
     root.querySelector("h1").textContent = tx(product.name);
     root.querySelector(".lead").textContent = tx(product.summary);
@@ -364,7 +367,7 @@
   renderChrome();
   const queryLang = new URLSearchParams(location.search).get("lang");
   setLang(queryLang === "ur" || queryLang === "en" ? queryLang : (localStorage.getItem("katek-lang") || "en"));
-  fetch("data/catalog.json?v=30").then((response) => response.json()).then((data) => {
+  fetch("data/catalog.json?v=31").then((response) => response.json()).then((data) => {
     catalog = data;
     render();
   }).catch(() => {
