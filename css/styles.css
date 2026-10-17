@@ -127,26 +127,38 @@ html[dir="rtl"] .desk li { direction: ltr; }
 .menu a[aria-current="page"], .menu a:hover { background: transparent; color: #0d4ec4; }
 .menu a.menu-cta { background: #0d4ec4; color: white; border-radius: 3px; }
 .menu a.menu-cta:hover { background: #082f86; color: white; }
+.site-header, .header-row, .menu { overflow: visible; }
 .sub {
   display: none;
   position: absolute;
   inset-inline-start: 0;
-  top: calc(100% + 8px);
-  background: white;
-  min-width: 260px;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 0.4rem;
-  box-shadow: var(--shadow);
-  list-style: none;
+  top: 100%;
+  z-index: 50;
+  min-width: 240px;
   margin: 0;
-  max-height: 70vh;
-  overflow: auto;
+  padding: 0.35rem 0 0;
+  list-style: none;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  max-height: none;
 }
+.sub::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0.35rem 0 0;
+  background: #fff;
+  border: 1px solid #e4eaf3;
+  border-top: 3px solid #0d4ec4;
+  box-shadow: 0 12px 28px rgba(8, 47, 134, 0.1);
+}
+.menu > li:nth-child(n+3) > .sub { inset-inline-start: auto; inset-inline-end: 0; }
 .menu > li:hover > .sub,
 .menu > li:focus-within > .sub,
 .menu > li.open > .sub { display: block; }
-.sub a { display: block; border-radius: 10px; }
+.sub a { display: flex; padding: 0.4rem 0.85rem; }
+.sub a:hover { background: #f4f7fb; }
 
 .hero { padding: 2.4rem 0 1.2rem; }
 .hero-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 2rem; align-items: center; }
@@ -655,6 +667,10 @@ html[dir="rtl"] .plate::before {
 
 @media (max-width: 1100px) {
   .hero-grid, .pillars, .split, .cards, .grid, .statements, .footer-grid, .facts { grid-template-columns: 1fr; }
+  .hero { padding-top: 1.2rem; }
+  main.band h1 { font-size: clamp(2.2rem, 12vw, 3.4rem); }
+}
+@media (max-width: 900px) {
   .nav-toggle { display: inline-flex; }
   .menu {
     display: none;
@@ -670,10 +686,12 @@ html[dir="rtl"] .plate::before {
     overflow: auto;
   }
   .site-header.open .menu { display: flex; }
-  .sub { position: static; box-shadow: none; display: none; min-width: 0; }
-  .menu > li.open > .sub { display: block; }
-  .hero { padding-top: 1.2rem; }
-  main.band h1 { font-size: clamp(2.2rem, 12vw, 3.4rem); }
+  .menu > li:nth-child(n+3) > .sub { inset-inline-start: 0; inset-inline-end: auto; }
+  .sub { position: static; display: none; min-width: 0; padding: 0 0 0.2rem 0.8rem; background: transparent; }
+  .sub::before { display: none; }
+  .menu > li.open > .sub,
+  .menu > li:hover > .sub,
+  .menu > li:focus-within > .sub { display: block; }
 }
 .hero-slider { position: relative; background: #082f86; min-height: 540px; }
 .slide { display: none; position: relative; min-height: 540px; overflow: hidden; }

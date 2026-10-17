@@ -51,10 +51,11 @@
     { href: "shop.html", page: "shop", en: "Shop", ur: "دکان" }
   ];
 
-  function link(item) {
+  function link(item, hasChildren) {
     const attrs = [];
     if (item.page === page) attrs.push('aria-current="page"');
     if (item.href === "shop.html") attrs.push('class="menu-cta"');
+    if (hasChildren) attrs.push('aria-haspopup="true" aria-expanded="false"');
     const extra = attrs.length ? ` ${attrs.join(" ")}` : "";
     return `<a href="${item.href}"${extra}><span data-en>${item.en}</span><span data-ur>${item.ur}</span></a>`;
   }
@@ -74,7 +75,7 @@
         <div class="site-header"><div class="wrap header-row">
           <a class="brand" href="index.html"><img src="assets/logo.png" alt="Katek" width="132" height="54" decoding="async"></a>
           <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
-          <ul class="menu">${nav.map((item) => `<li>${link(item)}${item.children ? `<ul class="sub">${item.children.map((child) => `<li>${link(child)}</li>`).join("")}</ul>` : ""}</li>`).join("")}</ul>
+          <ul class="menu">${nav.map((item) => `<li>${link(item, Boolean(item.children))}${item.children ? `<ul class="sub">${item.children.map((child) => `<li>${link(child)}</li>`).join("")}</ul>` : ""}</li>`).join("")}</ul>
         </div></div>`;
     }
     if (footer) {
@@ -86,25 +87,30 @@
           <div><h3><span data-en>Company</span><span data-ur>کمپنی</span></h3><ul><li><a href="about.html"><span data-en>About</span><span data-ur>ہمارے بارے</span></a></li><li><a href="where.html"><span data-en>Where to buy</span><span data-ur>کہاں سے خریدیں</span></a></li><li><a href="contact.html"><span data-en>Contact</span><span data-ur>رابطہ</span></a></li><li><a href="mailto:info@katekag.com">info@katekag.com</a></li></ul></div>
         </div></div></footer>`;
     }
+    const narrowNav = window.matchMedia("(max-width: 900px)");
     document.querySelector("[data-nav-toggle]")?.addEventListener("click", () => {
-      const open = document.querySelector(".site-header").classList.toggle("open");
+      const header = document.querySelector(".site-header");
+      const open = header.classList.toggle("open");
       document.querySelector("[data-nav-toggle]").setAttribute("aria-expanded", open ? "true" : "false");
     });
     document.querySelectorAll("[data-set-lang]").forEach((button) => {
       button.addEventListener("click", () => setLang(button.dataset.setLang));
     });
-    if (window.matchMedia("(max-width: 900px)").matches) {
-      document.querySelectorAll(".menu > li").forEach((item) => {
-        const sub = item.querySelector(".sub");
-        if (!sub) return;
-        item.querySelector("a").addEventListener("click", (event) => {
-          if (!item.classList.contains("open")) {
-            event.preventDefault();
-            item.classList.add("open");
-          }
+    document.querySelectorAll(".menu > li").forEach((item) => {
+      const sub = item.querySelector(":scope > .sub");
+      const linkEl = item.querySelector(":scope > a");
+      if (!sub || !linkEl) return;
+      linkEl.addEventListener("click", (event) => {
+        if (!narrowNav.matches || item.classList.contains("open")) return;
+        event.preventDefault();
+        document.querySelectorAll(".menu > li.open").forEach((open) => {
+          open.classList.remove("open");
+          open.querySelector(":scope > a")?.setAttribute("aria-expanded", "false");
         });
+        item.classList.add("open");
+        linkEl.setAttribute("aria-expanded", "true");
       });
-    }
+    });
   }
 
   let catalog = null;
