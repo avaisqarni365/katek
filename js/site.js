@@ -367,7 +367,7 @@
   renderChrome();
   const queryLang = new URLSearchParams(location.search).get("lang");
   setLang(queryLang === "ur" || queryLang === "en" ? queryLang : (localStorage.getItem("katek-lang") || "en"));
-  fetch("data/catalog.json?v=31").then((response) => response.json()).then((data) => {
+  fetch("data/catalog.json?v=33").then((response) => response.json()).then((data) => {
     catalog = data;
     render();
   }).catch(() => {
