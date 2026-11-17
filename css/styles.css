@@ -466,6 +466,40 @@ html[lang="ur"] .site-footer h3 { font-family: var(--nastaliq); line-height: 2; 
 .social a.mark { width: 44px; height: 44px; padding: 0; border: 0; background: transparent; justify-content: center; }
 .social a.mark img { width: 34px; height: 34px; display: block; }
 .social a.mark:hover { background: transparent; }
+.pack-qr {
+  display: grid;
+  grid-template-columns: 148px 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin: 1.2rem 0 0;
+  padding: 0.9rem;
+  background: #fff;
+  border: 1px solid #e4eaf3;
+  border-top: 4px solid #0d4ec4;
+}
+.pack-qr img { width: 148px; height: 148px; background: #fff; }
+.pack-qr p { margin: 0.3rem 0 0; }
+@media (max-width: 640px) {
+  .pack-qr { grid-template-columns: 1fr; }
+  .pack-qr img { width: min(180px, 72%); height: auto; }
+}
+.label-sheet {
+  width: 80mm;
+  margin: 1.4rem auto 0;
+  padding: 7mm 6mm 6mm;
+  background: #fff;
+  border: 1px solid #e4eaf3;
+  text-align: center;
+}
+.label-sheet .brand-lock { width: 42mm; height: auto; margin: 0 auto 4mm; }
+.label-sheet .code { width: 58mm; height: 58mm; margin: 0 auto; }
+.label-sheet .url { margin: 3mm 0 0; font-weight: 700; letter-spacing: 0.03em; }
+.label-sheet .fine { margin: 1mm 0 0; font-size: 0.78rem; }
+@media print {
+  .util, .site-header, .site-footer, .skip, .no-print { display: none !important; }
+  body { background: #fff; padding: 0; }
+  .label-sheet { border: 0; margin: 0; }
+}
 
 .cinema {
   position: relative;

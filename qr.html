@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Product QR · Katek</title>
+  <link rel="icon" href="assets/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=36">
+  <script>(function(){var l=localStorage.getItem("katek-lang")||"en";var ur=l==="ur";document.documentElement.lang=ur?"ur":"en";document.documentElement.dir=ur?"rtl":"ltr";if(ur){var s=document.createElement("link");s.id="urdu-font";s.rel="stylesheet";s.href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&display=swap";document.head.appendChild(s);}})();</script>
+</head>
+<body data-page="qr">
+  <a class="skip" href="#main">Skip to content</a>
+  <div data-header></div>
+  <main id="main" class="band">
+    <div class="wrap no-print">
+      <p class="kicker"><span data-en>Pack</span><span data-ur>پیک</span></p>
+      <h1><span data-en>QR for the product</span><span data-ur>مصنوع کے لیے کیو آر</span></h1>
+      <p><span data-en>A scan opens katekag.com. Print this label for the bag, or give the SVG to the printer. The SVG stays sharp at any size.</span><span data-ur>اسکین katekag.com کھولتا ہے۔ یہ لیبل بیگ کے لیے چھاپیں، یا SVG پرنٹر کو دیں۔ SVG ہر سائز پر صاف رہتا ہے۔</span></p>
+      <p class="actions">
+        <button class="button" type="button" onclick="window.print()"><span data-en>Print</span><span data-ur>چھاپیں</span></button>
+        <a class="button dark" href="assets/katek-qr.svg" download="katek-qr.svg">SVG</a>
+        <a class="button dark" href="assets/katek-qr.png" download="katek-qr.png">PNG</a>
+      </p>
+    </div>
+    <section class="label-sheet" aria-label="Katek pack label">
+      <img class="brand-lock" src="assets/logo.png" alt="Katek">
+      <img class="code" src="assets/katek-qr.svg" alt="QR code for https://katekag.com/">
+      <p class="url">katekag.com</p>
+      <p class="fine">+92 61 6537515 · +92 311 0458065</p>
+    </section>
+  </main>
+  <div data-footer></div>
+  <script src="js/site.js?v=36"></script>
+</body>
+</html>
