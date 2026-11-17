@@ -1,5 +1,6 @@
 (function () {
-  const katekPhone = "+92 302 755 0273";
+  const katekLandline = "0616537515";
+  const katekWhatsApp = "03110458065";
   const page = document.body.dataset.page || "home";
   const titles = {
     home: { en: "Katek Organic Fertilizers", ur: "کیٹک نامیاتی کھادیں" },
@@ -81,7 +82,7 @@
     if (footer) {
       footer.innerHTML = `
         <footer class="site-footer"><div class="wrap"><img class="footer-logo" src="assets/logo.png" alt="Katek"><div class="footer-grid">
-          <div><strong>Katek</strong><p class="fine"><span data-en>Organic fertilizers for home gardeners, landscapers, and commercial growers in Pakistan. Quotes only.</span><span data-ur>پاکستان کے گھریلو باغبانوں، لینڈ سکیپ والوں اور تجارتی کاشتکاروں کے لیے نامیاتی کھادیں۔ صرف قیمت۔</span></p><p class="fine"><span data-en>M/S Katek AG · 6-B, Industrial Estate, Multan · MR/0121 · FBR H495164</span><span data-ur>ایم/ایس کیٹک اے جی · 6-بی، انڈسٹریل اسٹیٹ، ملتان · MR/0121 · ایف بی آر H495164</span></p><ul class="social"><li><a class="mark" href="https://www.facebook.com/katekag" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt=""></a></li><li><a class="mark" href="https://www.instagram.com/katekag" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt=""></a></li><li><a class="mark" href="https://www.tiktok.com/@katekag" target="_blank" rel="noopener" aria-label="TikTok"><img src="assets/icon-tiktok.svg" alt=""></a></li><li><a class="mark" href="https://wa.me/923027550273" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icon-whatsapp.svg" alt=""></a></li><li><a href="mailto:info@katekag.com">info@katekag.com</a></li><li><a href="mailto:CEO@katekag.com">CEO@katekag.com</a></li></ul></div>
+          <div><strong>Katek</strong><p class="fine"><span data-en>Organic fertilizers for home gardeners, landscapers, and commercial growers in Pakistan. Quotes only.</span><span data-ur>پاکستان کے گھریلو باغبانوں، لینڈ سکیپ والوں اور تجارتی کاشتکاروں کے لیے نامیاتی کھادیں۔ صرف قیمت۔</span></p><p class="fine"><span data-en>M/S Katek AG · 6-B, Industrial Estate, Multan · MR/0121 · FBR H495164</span><span data-ur>ایم/ایس کیٹک اے جی · 6-بی، انڈسٹریل اسٹیٹ، ملتان · MR/0121 · ایف بی آر H495164</span></p><ul class="social"><li><a class="mark" href="https://www.facebook.com/katekag" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt=""></a></li><li><a class="mark" href="https://www.instagram.com/katekag" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt=""></a></li><li><a class="mark" href="https://www.tiktok.com/@katekag" target="_blank" rel="noopener" aria-label="TikTok"><img src="assets/icon-tiktok.svg" alt=""></a></li><li><a class="mark" href="https://wa.me/923110458065" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icon-whatsapp.svg" alt=""></a></li><li><a href="mailto:info@katekag.com">info@katekag.com</a></li><li><a href="mailto:CEO@katekag.com">CEO@katekag.com</a></li></ul></div>
           <div><h3><span data-en>Home gardener</span><span data-ur>گھریلو باغبان</span></h3><ul><li><a href="products.html?audience=home"><span data-en>Products</span><span data-ur>مصنوعات</span></a></li><li><a href="guides.html"><span data-en>How to guides</span><span data-ur>رہنما ہدایات</span></a></li></ul></div>
           <div><h3><span data-en>Commercial</span><span data-ur>تجارتی</span></h3><ul><li><a href="products.html?audience=commercial"><span data-en>Products</span><span data-ur>مصنوعات</span></a></li><li><a href="product.html?id=custom-blend"><span data-en>Custom blend</span><span data-ur>حسبِ ضرورت ملاوٹ</span></a></li></ul></div>
           <div><h3><span data-en>Company</span><span data-ur>کمپنی</span></h3><ul><li><a href="about.html"><span data-en>About</span><span data-ur>ہمارے بارے</span></a></li><li><a href="where.html"><span data-en>Where to buy</span><span data-ur>کہاں سے خریدیں</span></a></li><li><a href="contact.html"><span data-en>Contact</span><span data-ur>رابطہ</span></a></li><li><a href="mailto:info@katekag.com">info@katekag.com</a></li></ul></div>
@@ -307,25 +308,21 @@
     else if (digits.startsWith("92")) digits = digits.slice(2);
     if (digits.startsWith("3") && digits.length === 10) digits = `0${digits}`;
     if (/^03\d{9}$/.test(digits)) return { local: `${digits.slice(0, 4)} ${digits.slice(4)}`, e164: `92${digits.slice(1)}` };
-    if (/^0[1-9]\d{8,9}$/.test(digits)) return { local: digits, e164: `92${digits.slice(1)}` };
+    if (/^0[1-9]\d{8,9}$/.test(digits)) return { local: `${digits.slice(0, 3)} ${digits.slice(3)}`, e164: `92${digits.slice(1)}` };
     return null;
   }
 
   function renderPhone() {
     const bar = document.querySelector("[data-phone-bar]");
     const spot = document.querySelector("[data-katek-phone]");
-    const parsed = pakistaniPhone(katekPhone);
-    if (bar && parsed) {
-      bar.innerHTML = `<a href="tel:+${parsed.e164}" style="color:inherit">${parsed.local}</a>`;
+    const landline = pakistaniPhone(katekLandline);
+    const whatsapp = pakistaniPhone(katekWhatsApp);
+    if (bar && landline) {
+      bar.innerHTML = `<a href="tel:+${landline.e164}" style="color:inherit">${landline.local}</a>`;
     }
     if (!spot) return;
-    if (!parsed) {
-      spot.innerHTML = lang() === "ur"
-        ? "کیٹک کا نمبر پاکستانی موبائل ہو گا، جیسے 03XX XXXXXXX۔ نمبر ملنے پر یہیں اور اوپر دکھے گا۔"
-        : "Katek’s number will be a Pakistani mobile, such as 03XX XXXXXXX. It will show here and in the top bar once you send it.";
-      return;
-    }
-    spot.innerHTML = `<a href="tel:+${parsed.e164}">${parsed.local}</a> · <a href="https://wa.me/${parsed.e164}">WhatsApp</a>`;
+    if (!landline || !whatsapp) return;
+    spot.innerHTML = `<a href="tel:+${landline.e164}">+92 ${landline.local.slice(1)}</a> · <a href="https://wa.me/${whatsapp.e164}">WhatsApp +92 ${whatsapp.local.slice(1)}</a>`;
   }
 
   document.querySelector("[data-quote-form]")?.addEventListener("submit", async (event) => {
@@ -340,7 +337,7 @@
       return;
     }
     const text = [`Katek quote`, `Name: ${name}`, `City: ${city}`, `Phone: ${phone.local}`, `Product: ${data.get("product") || "-"}`, `Message: ${data.get("message") || "-"}`].join("\n");
-    const business = pakistaniPhone(katekPhone);
+    const business = pakistaniPhone(katekWhatsApp);
     if (business) {
       window.open(`https://wa.me/${business.e164}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
       note.textContent = lang() === "ur" ? "واٹس ایپ کھل گیا۔" : "WhatsApp is open with your enquiry.";
